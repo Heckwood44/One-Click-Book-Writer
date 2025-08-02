@@ -1,0 +1,20 @@
+{
+  "generated_at": "2025-08-02T21:58:26.585852",
+  "pipeline_version": "1.0.0",
+  "optimization_used": true,
+  "chapter_info": {
+    "number": 1,
+    "title": "Der erste Flug",
+    "narrative_purpose": "Einführung der Hauptfigur und Aufbau der Spannung für den ersten Flug",
+    "position_in_arc": "setup",
+    "length_words": 800
+  },
+  "book_info": {
+    "title": "Die Abenteuer des kleinen Drachen",
+    "genre": "Kinderbuch",
+    "target_audience": "Kinder im Alter von 6-10 Jahren",
+    "theme": "Mut und Selbstvertrauen",
+    "setting": "Ein magisches Drachenland in den Bergen"
+  },
+  "word_count": 414
+}

@@ -1,0 +1,59 @@
+{
+  "batch_info": {
+    "total_chapters": 3,
+    "successful_chapters": 3,
+    "failed_chapters": 0,
+    "errors": []
+  },
+  "chapters": [
+    {
+      "chapter_num": 1,
+      "success": true,
+      "output_path": "output/chapters/batch_chapter_001.txt",
+      "text_length": 1170,
+      "engine": "claude",
+      "metadata": {
+        "chapter_number": 1,
+        "chapter_title": "Kapitel 1: Der erste Verdacht",
+        "book_title": "Schatten der Vergangenheit",
+        "genre": "Kriminalroman",
+        "target_audience": "Erwachsene, Krimi-Liebhaber",
+        "word_limit": 1200,
+        "narrative_purpose": "Einführung des Detektivs und Aufbau der ersten Spuren"
+      }
+    },
+    {
+      "chapter_num": 2,
+      "success": true,
+      "output_path": "output/chapters/batch_chapter_002.txt",
+      "text_length": 1170,
+      "engine": "claude",
+      "metadata": {
+        "chapter_number": 2,
+        "chapter_title": "Kapitel 2: Der erste Verdacht",
+        "book_title": "Schatten der Vergangenheit",
+        "genre": "Kriminalroman",
+        "target_audience": "Erwachsene, Krimi-Liebhaber",
+        "word_limit": 1200,
+        "narrative_purpose": "Einführung des Detektivs und Aufbau der ersten Spuren"
+      }
+    },
+    {
+      "chapter_num": 3,
+      "success": true,
+      "output_path": "output/chapters/batch_chapter_003.txt",
+      "text_length": 1170,
+      "engine": "claude",
+      "metadata": {
+        "chapter_number": 3,
+        "chapter_title": "Kapitel 3: Der erste Verdacht",
+        "book_title": "Schatten der Vergangenheit",
+        "genre": "Kriminalroman",
+        "target_audience": "Erwachsene, Krimi-Liebhaber",
+        "word_limit": 1200,
+        "narrative_purpose": "Einführung des Detektivs und Aufbau der ersten Spuren"
+      }
+    }
+  ],
+  "timestamp": 1754158171.625729
+}

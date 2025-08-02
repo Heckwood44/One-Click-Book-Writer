@@ -1,0 +1,78 @@
+{
+  "input": {
+    "chapter": {
+      "number": 1,
+      "title": "Der erste Kontakt",
+      "narrative_purpose": "Einführung der Protagonistin und Entdeckung der außerirdischen Technologie",
+      "position_in_arc": "setup",
+      "length_words": 1500
+    },
+    "book": {
+      "title": "Echo der Sterne",
+      "genre": "Science Fiction",
+      "target_audience": "Junge Erwachsene, Sci-Fi-Fans",
+      "theme": "Erste Kontakte und menschliche Neugier",
+      "setting": "Eine Forschungsstation auf dem Mars im Jahr 2157"
+    },
+    "style": {
+      "writing_style": "descriptive",
+      "tone": "wonder",
+      "tense": "past",
+      "perspective": "third_limited",
+      "sentence_complexity": "complex",
+      "vocabulary_level": "advanced"
+    },
+    "story_context": {
+      "previous_summary": "Dr. Sarah Chen ist eine brillante Astrophysikerin, die seit drei Jahren auf der Mars-Forschungsstation 'Red Horizon' arbeitet. Sie hat ungewöhnliche Signale aus dem All entdeckt.",
+      "current_scene": "Sarah entdeckt ein mysteriöses Objekt in der Nähe der Forschungsstation. Es scheint eine außerirdische Technologie zu sein, die auf ihre Anwesenheit reagiert.",
+      "location": {
+        "name": "Mars-Forschungsstation Red Horizon",
+        "mood": "aufregend und mysteriös",
+        "description": "Eine moderne Forschungsstation mit gläsernen Kuppeln und roten Mars-Sand ringsum"
+      },
+      "supporting_characters": [
+        {
+          "name": "Commander Rodriguez",
+          "role": "Station Commander",
+          "description": "Ein erfahrener Astronaut und Leiter der Station"
+        },
+        {
+          "name": "Dr. Kim",
+          "role": "Xenobiologe",
+          "description": "Ein Experte für außerirdisches Leben"
+        }
+      ]
+    },
+    "emotional_layer": {
+      "core_emotion": "Staunen und Neugier",
+      "emotional_tone": "aufgeregt und ehrfürchtig",
+      "emotional_intensity": "high"
+    },
+    "constraints": {
+      "structure": "linear",
+      "format": "prose",
+      "stylistic_dos": [
+        "Verwende wissenschaftliche Begriffe",
+        "Beschreibe die Mars-Umgebung detailliert",
+        "Baue Spannung durch wissenschaftliche Entdeckungen",
+        "Zeige die Reaktionen der Charaktere"
+      ],
+      "forbidden_elements": [
+        "Übermäßig technische Details",
+        "Klischeehafte Alien-Darstellungen",
+        "Unrealistische Wissenschaft"
+      ],
+      "output_formatting": {
+        "include_title": true,
+        "include_chapter_number": true,
+        "paragraph_spacing": "double"
+      }
+    },
+    "model_interpretation_guidance": {
+      "scene_priority": "current_scene über previous_summary",
+      "symbol_usage": "implizit für wissenschaftliche Entdeckungen",
+      "emotional_tone_behavior": "durchgängig staunend",
+      "stylistic_rule_handling": "priorisiere wissenschaftliche Genauigkeit"
+    }
+  }
+} 

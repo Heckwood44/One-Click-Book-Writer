@@ -1,0 +1,78 @@
+{
+  "input": {
+    "chapter": {
+      "number": 1,
+      "title": "Der erste Verdacht",
+      "narrative_purpose": "Einführung des Detektivs und Aufbau der ersten Spuren",
+      "position_in_arc": "setup",
+      "length_words": 1200
+    },
+    "book": {
+      "title": "Schatten der Vergangenheit",
+      "genre": "Kriminalroman",
+      "target_audience": "Erwachsene, Krimi-Liebhaber",
+      "theme": "Gerechtigkeit und Vergeltung",
+      "setting": "Eine kleine Stadt in Norddeutschland"
+    },
+    "style": {
+      "writing_style": "descriptive",
+      "tone": "mysterious",
+      "tense": "past",
+      "perspective": "third_limited",
+      "sentence_complexity": "moderate",
+      "vocabulary_level": "intermediate"
+    },
+    "story_context": {
+      "previous_summary": "Kommissar Weber ist ein erfahrener Kriminalbeamter, der nach einem traumatischen Fall in die kleine Stadt versetzt wurde.",
+      "current_scene": "Kommissar Weber betritt die Szene eines mysteriösen Todesfalls. Ein angesehener Geschäftsmann wurde in seinem Büro tot aufgefunden, ohne äußere Verletzungen.",
+      "location": {
+        "name": "Büro des Opfers",
+        "mood": "düster und bedrohlich",
+        "description": "Ein luxuriöses Büro im obersten Stockwerk eines modernen Geschäftsgebäudes"
+      },
+      "supporting_characters": [
+        {
+          "name": "Dr. Schmidt",
+          "role": "Gerichtsmediziner",
+          "description": "Ein erfahrener Pathologe, der bereits mit Weber zusammengearbeitet hat"
+        },
+        {
+          "name": "Frau Müller",
+          "role": "Sekretärin des Opfers",
+          "description": "Eine nervöse junge Frau, die den Toten entdeckt hat"
+        }
+      ]
+    },
+    "emotional_layer": {
+      "core_emotion": "Spannung und Unsicherheit",
+      "emotional_tone": "düster und mysteriös",
+      "emotional_intensity": "high"
+    },
+    "constraints": {
+      "structure": "linear",
+      "format": "prose",
+      "stylistic_dos": [
+        "Baue Spannung auf",
+        "Verwende detaillierte Beschreibungen",
+        "Integriere Hinweise für spätere Entwicklungen",
+        "Zeige die Persönlichkeit des Detektivs"
+      ],
+      "forbidden_elements": [
+        "Gewalt-Details",
+        "Übermäßige Brutalität",
+        "Klischeehafte Dialoge"
+      ],
+      "output_formatting": {
+        "include_title": true,
+        "include_chapter_number": true,
+        "paragraph_spacing": "double"
+      }
+    },
+    "model_interpretation_guidance": {
+      "scene_priority": "current_scene über previous_summary",
+      "symbol_usage": "implizit für Stimmung",
+      "emotional_tone_behavior": "durchgängig düster",
+      "stylistic_rule_handling": "priorisiere Spannungsaufbau"
+    }
+  }
+} 

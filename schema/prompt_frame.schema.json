@@ -1,0 +1,212 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PromptFrame Schema",
+  "description": "Schema für strukturierte Prompt-Eingaben zur Kapitelgenerierung",
+  "type": "object",
+  "required": ["input"],
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["chapter", "book", "style"],
+      "properties": {
+        "chapter": {
+          "type": "object",
+          "required": ["number", "title", "narrative_purpose", "position_in_arc", "length_words"],
+          "properties": {
+            "number": {"type": "integer", "minimum": 1},
+            "title": {"type": "string", "minLength": 1},
+            "narrative_purpose": {"type": "string", "minLength": 1},
+            "position_in_arc": {"type": "string", "enum": ["setup", "rising_action", "climax", "falling_action", "resolution"]},
+            "length_words": {"type": "integer", "minimum": 100, "maximum": 5000}
+          }
+        },
+        "book": {
+          "type": "object",
+          "required": ["title", "genre", "target_audience"],
+          "properties": {
+            "title": {"type": "string", "minLength": 1},
+            "genre": {"type": "string", "minLength": 1},
+            "target_audience": {"type": "string", "minLength": 1},
+            "theme": {"type": "string"},
+            "setting": {"type": "string"}
+          }
+        },
+        "style": {
+          "type": "object",
+          "properties": {
+            "writing_style": {"type": "string", "enum": ["descriptive", "narrative", "dialogue-heavy", "action-oriented", "poetic"]},
+            "tone": {"type": "string"},
+            "tense": {"type": "string", "enum": ["past", "present", "future"]},
+            "perspective": {"type": "string", "enum": ["first", "second", "third_limited", "third_omniscient"]},
+            "sentence_complexity": {"type": "string", "enum": ["simple", "moderate", "complex"]},
+            "vocabulary_level": {"type": "string", "enum": ["basic", "intermediate", "advanced"]},
+            "rhyme_scheme": {"type": "string"},
+            "dialogue_style": {"type": "string"},
+            "pacing": {"type": "string"}
+          }
+        },
+        "story_context": {
+          "type": "object",
+          "required": ["current_scene"],
+          "properties": {
+            "previous_summary": {"type": "string"},
+            "current_scene": {"type": "string", "minLength": 1},
+            "location": {
+              "type": "object",
+              "properties": {
+                "name": {"type": "string"},
+                "mood": {"type": "string"},
+                "description": {"type": "string"}
+              }
+            },
+            "supporting_characters": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name", "role"],
+                "properties": {
+                  "name": {"type": "string"},
+                  "role": {"type": "string"},
+                  "description": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "emotional_layer": {
+          "type": "object",
+          "properties": {
+            "core_emotion": {"type": "string"},
+            "emotional_tone": {"type": "string"},
+            "emotional_intensity": {"type": "string", "enum": ["low", "medium", "high"]}
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "required": ["structure", "format"],
+          "properties": {
+            "structure": {"type": "string", "enum": ["linear", "flashback", "parallel", "circular"]},
+            "format": {"type": "string", "enum": ["prose", "verse", "dialogue", "mixed"]},
+            "stylistic_dos": {"type": "array", "items": {"type": "string"}},
+            "forbidden_elements": {"type": "array", "items": {"type": "string"}},
+            "output_formatting": {
+              "type": "object",
+              "properties": {
+                "include_title": {"type": "boolean"},
+                "include_chapter_number": {"type": "boolean"},
+                "paragraph_spacing": {"type": "string"}
+              }
+            }
+          }
+        },
+        "characters": {
+          "type": "object",
+          "properties": {
+            "main_character": {
+              "type": "object",
+              "properties": {
+                "name": {"type": "string"},
+                "description": {"type": "string"},
+                "personality": {"type": "string"},
+                "goals": {"type": "string"},
+                "language_variants": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                      "name": {"type": "string"},
+                      "description": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            },
+            "supporting_characters": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {"type": "string"},
+                  "role": {"type": "string"},
+                  "language_variants": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object",
+                      "properties": {
+                        "name": {"type": "string"},
+                        "role": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "scene": {
+          "type": "object",
+          "properties": {
+            "setting": {"type": "string"},
+            "time": {"type": "string"},
+            "atmosphere": {"type": "string"},
+            "language_variants": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "setting": {"type": "string"},
+                  "time": {"type": "string"},
+                  "atmosphere": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "plot": {
+          "type": "object",
+          "properties": {
+            "main_event": {"type": "string"},
+            "conflict": {"type": "string"},
+            "resolution": {"type": "string"}
+          }
+        },
+        "emotions": {
+          "type": "object",
+          "properties": {
+            "core_emotion": {"type": "string"},
+            "emotional_arc": {"type": "string"},
+            "language_variants": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "core_emotion": {"type": "string"},
+                  "emotional_arc": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "language": {
+          "type": "object",
+          "properties": {
+            "primary_language": {"type": "string"},
+            "target_languages": {"type": "array", "items": {"type": "string"}},
+            "translation_style": {"type": "string"},
+            "bilingual_output": {"type": "boolean"},
+            "separate_files": {"type": "boolean"}
+          }
+        },
+        "model_interpretation_guidance": {
+          "type": "object",
+          "properties": {
+            "scene_priority": {"type": "string"},
+            "symbol_usage": {"type": "string"},
+            "emotional_tone_behavior": {"type": "string"},
+            "stylistic_rule_handling": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+} 

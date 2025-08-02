@@ -1,0 +1,83 @@
+{
+  "input": {
+    "book": {
+      "title": "Die Abenteuer des kleinen Drachen",
+      "genre": "Kinderbuch",
+      "target_audience": "Kinder im Alter von 6-10 Jahren",
+      "theme": "Mut und Selbstvertrauen",
+      "setting": "Ein magisches Drachenland in den Bergen",
+      "language_variants": ["de", "en"],
+      "bilingual_sequence": ["de", "en"],
+      "titles": {
+        "de": "Die Abenteuer des kleinen Drachen",
+        "en": "The Adventures of the Little Dragon"
+      }
+    },
+    "chapter": {
+      "number": 1,
+      "title": "Der erste Flug",
+      "narrative_purpose": "Einführung der Hauptfigur und Aufbau der Spannung für den ersten Flug",
+      "position_in_arc": "setup",
+      "length_words": 800,
+      "language_variants": ["de", "en"],
+      "bilingual_sequence": ["de", "en"],
+      "titles": {
+        "de": "Der erste Flug",
+        "en": "The First Flight"
+      }
+    },
+    "characters": {
+      "main_character": {
+        "name": "Feuerherz",
+        "description": "Ein kleiner, mutiger Drache mit bernsteinfarbenen Augen",
+        "personality": "Neugierig, mutig, aber auch etwas nervös",
+        "goals": "Fliegen lernen und die Welt erkunden",
+        "language_variants": {
+          "de": {
+            "name": "Feuerherz",
+            "description": "Ein kleiner, mutiger Drache mit bernsteinfarbenen Augen"
+          },
+          "en": {
+            "name": "Fireheart",
+            "description": "A small, brave dragon with amber-colored eyes"
+          }
+        }
+      }
+    },
+    "scene": {
+      "setting": "Drachenhöhle auf einem Felsvorsprung",
+      "time": "Goldener Nachmittag",
+      "atmosphere": "Aufregend und hoffnungsvoll"
+    },
+    "plot": {
+      "main_event": "Feuerherz macht seinen ersten Flug",
+      "conflict": "Angst vor dem Unbekannten vs. Wunsch zu fliegen",
+      "resolution": "Erfolgreicher erster Flug und gestärktes Selbstvertrauen"
+    },
+    "style": {
+      "tone": "Warm und ermutigend",
+      "pacing": "Gleichmäßig mit Spannungsaufbau",
+      "dialogue_style": "Natürlich und kindgerecht"
+    },
+    "emotions": {
+      "core_emotion": "Mut und Aufregung",
+      "emotional_arc": "Von Nervosität zu Freude und Stolz"
+    },
+    "language": {
+      "primary_language": "de",
+      "target_languages": ["de", "en"],
+      "translation_style": "Natural and culturally adapted",
+      "bilingual_output": true,
+      "separate_files": true
+    }
+  },
+  "output": {
+    "format": "text",
+    "include_metadata": true,
+    "bilingual_format": "separate_files",
+    "file_naming": {
+      "de": "chapter_{number}_de.txt",
+      "en": "chapter_{number}_en.txt"
+    }
+  }
+}
