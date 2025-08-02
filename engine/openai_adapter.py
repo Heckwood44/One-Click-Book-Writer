@@ -31,6 +31,33 @@ class OpenAIAdapter:
         self.client = OpenAI(api_key=self.api_key)
         self.model = "gpt-4-turbo-preview"
         
+    def is_available(self) -> bool:
+        """
+        Prüft, ob der OpenAI Adapter verfügbar ist.
+        
+        Returns:
+            True wenn API-Key gesetzt ist
+        """
+        return bool(self.api_key)
+        
+    def generate_text(self, prompt: str, **kwargs) -> str:
+        """
+        Generiert Text mit OpenAI (Wrapper für generate_chapter).
+        
+        Args:
+            prompt: Prompt-Text
+            **kwargs: Zusätzliche Parameter
+            
+        Returns:
+            Generierter Text als String
+        """
+        try:
+            result = self.generate_chapter(prompt, **kwargs)
+            return result.get("text", "")
+        except Exception as e:
+            logger.error(f"Fehler bei generate_text: {e}")
+            return ""
+        
     def generate_chapter(self, prompt: str, **kwargs) -> Dict[str, Any]:
         """
         Generiert ein Kapitel mit ChatGPT basierend auf dem kompilierten Prompt.

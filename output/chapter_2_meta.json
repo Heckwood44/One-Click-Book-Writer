@@ -1,0 +1,167 @@
+{
+  "chapter_number": 2,
+  "prompt_versioning": {
+    "total_versions": 4,
+    "latest_version_hash": "a8e36c4e99713137",
+    "latest_optimized_hash": "1ed0f769debcdd46",
+    "latest_timestamp": "2025-08-03T01:11:35.713024",
+    "prompt_length": 3682,
+    "optimized_length": 2173,
+    "diff": {
+      "raw_lines": 104,
+      "optimized_lines": 47,
+      "line_difference": -57,
+      "character_difference": -1509
+    }
+  },
+  "book_metadata": {
+    "book_title": "Die Abenteuer des kleinen Drachen",
+    "chapter_title": "Der erste Flug",
+    "genre": "Kinderbuch",
+    "is_bilingual": true
+  },
+  "quality_evaluation": {
+    "german_evaluation": {
+      "overall_score": 0.15,
+      "quality_level": "Poor",
+      "review_required": true,
+      "critical_issues": true,
+      "flags": [
+        "WORTLIMIT_PROBLEM",
+        "EMOTION_PROBLEM",
+        "READABILITY_PROBLEM",
+        "STRUCTURE_PROBLEM"
+      ],
+      "weights": {
+        "word_limit_compliance": 0.25,
+        "core_emotion_presence": 0.2,
+        "repetition_penalty": 0.15,
+        "readability": 0.2,
+        "structure_quality": 0.2
+      },
+      "individual_scores": {
+        "word_limit_compliance": {
+          "score": 0.0,
+          "details": {
+            "actual_words": 0,
+            "target_words": 800,
+            "deviation_percent": 100.0,
+            "score": 0.0
+          }
+        },
+        "core_emotion_presence": {
+          "score": 0.0,
+          "details": {
+            "emotion_count": 0,
+            "total_words": 0
+          }
+        },
+        "repetition_penalty": {
+          "score": 1.0,
+          "details": {
+            "repetition_score": 1.0,
+            "reason": "Text zu kurz"
+          }
+        },
+        "readability": {
+          "score": 0.0,
+          "details": {
+            "readability_score": 0.0,
+            "reason": "Keine Sätze gefunden"
+          }
+        },
+        "structure_quality": {
+          "score": 0.0,
+          "details": {
+            "structure_score": 0.0,
+            "reason": "Keine Absätze gefunden"
+          }
+        }
+      },
+      "improvement_suggestions": [
+        "Wortanzahl anpassen - Ziel besser einhalten",
+        "Kernemotion stärker hervorheben",
+        "Satzlänge für Zielgruppe optimieren",
+        "Absatzstruktur verbessern"
+      ]
+    },
+    "english_evaluation": {
+      "overall_score": 0.468,
+      "quality_level": "Fair",
+      "review_required": true,
+      "critical_issues": true,
+      "flags": [
+        "WORTLIMIT_PROBLEM",
+        "EMOTION_PROBLEM"
+      ],
+      "weights": {
+        "word_limit_compliance": 0.25,
+        "core_emotion_presence": 0.2,
+        "repetition_penalty": 0.15,
+        "readability": 0.2,
+        "structure_quality": 0.2
+      },
+      "individual_scores": {
+        "word_limit_compliance": {
+          "score": 0.0,
+          "details": {
+            "actual_words": 389,
+            "target_words": 800,
+            "deviation_percent": 51.38,
+            "score": 0.0
+          }
+        },
+        "core_emotion_presence": {
+          "score": 0.0,
+          "details": {
+            "target_emotion": "wonder",
+            "emotion_count": 0,
+            "total_words": 389,
+            "emotion_ratio": 0.0,
+            "optimal_ratio": 2.0,
+            "score": 0.0
+          }
+        },
+        "repetition_penalty": {
+          "score": 0.785,
+          "details": {
+            "unique_words": 229,
+            "total_words": 389,
+            "repetition_ratio": 41.13,
+            "optimal_repetition": 25.0,
+            "score": 0.785
+          }
+        },
+        "readability": {
+          "score": 1.0,
+          "details": {
+            "target_audience": "Kinder im Alter von 6-10 Jahren",
+            "avg_sentence_length": 11.14,
+            "sentence_count": 35,
+            "score": 1.0
+          }
+        },
+        "structure_quality": {
+          "score": 0.75,
+          "details": {
+            "paragraph_count": 12,
+            "avg_paragraph_length": 32.42,
+            "length_score": 0.8,
+            "count_score": 0.7,
+            "structure_score": 0.75
+          }
+        }
+      },
+      "improvement_suggestions": [
+        "Wortanzahl anpassen - Ziel besser einhalten",
+        "Kernemotion stärker hervorheben"
+      ]
+    },
+    "consistency_score": 0.0,
+    "overall_bilingual_score": 0.206
+  },
+  "review_required": true,
+  "review_reason": "Qualitäts-Score 0.206 unter Schwellenwert 0.7",
+  "critical_issues": true,
+  "critical_reason": "Kritische Qualitätsprobleme: Score 0.206 < 0.5"
+}

@@ -60,63 +60,130 @@ class SimpleBookWriterGUI:
                     print(f"Claude Client Fallback fehlgeschlagen: {e2}")
                     self.claude_client = None
         
-        # Beispiel-JSON laden
+        # Beispiel-JSON laden (kompatibel mit neuer bilingualer Struktur)
         self.example_data = {
             "input": {
-                "chapter": {
-                    "number": 1,
-                    "title": "Der Anfang der Reise",
-                    "narrative_purpose": "Einführung der Hauptfigur und der magischen Welt",
-                    "position_in_arc": "Exposition",
-                    "length_words": 800,
-                    "perspective": "third_person",
-                    "tense": "past"
-                },
                 "book": {
                     "title": "Die magische Reise",
                     "genre": "Fantasy",
                     "target_audience": "children",
-                    "tone": "warm_and_encouraging"
-                },
-                "style": {
-                    "writing_style": "descriptive_and_engaging",
-                    "tone": "warm_and_encouraging",
-                    "tense": "past",
-                    "perspective": "third_person",
-                    "sentence_complexity": "simple",
-                    "vocabulary_level": "simple"
-                },
-                "story_context": {
-                    "current_scene": "Luna entdeckt einen verzauberten Wald",
-                    "previous_summary": "Luna ist ein mutiges Mädchen, das gerne Abenteuer erlebt",
-                    "location": {
-                        "name": "Verzauberter Wald",
-                        "mood": "mystisch und freundlich"
-                    },
-                    "supporting_characters": [
-                        {"name": "Luna", "role": "Hauptfigur"},
-                        {"name": "Ein kleiner Drache", "role": "Freund"}
-                    ]
-                },
-                "emotional_layer": {
-                    "core_emotion": "wonder",
-                    "emotional_tone": "hopeful",
-                    "emotional_intensity": "moderate"
-                },
-                "constraints": {
-                    "structure": "linear",
-                    "stylistic_dos": ["Magie", "Freundschaft", "Abenteuer"],
-                    "forbidden_elements": ["Gewalt", "Angst"],
-                    "format": "prose",
-                    "output_formatting": {
-                        "include_title": True
+                    "theme": "Mut und Selbstvertrauen",
+                    "setting": "Ein verzauberter Wald",
+                    "language_variants": ["de", "en"],
+                    "bilingual_sequence": ["de", "en"],
+                    "titles": {
+                        "de": "Die magische Reise",
+                        "en": "The Magical Journey"
                     }
                 },
-                "model_interpretation_guidance": {
-                    "scene_priority": "character_development",
-                    "symbol_usage": "moderate",
-                    "emotional_tone_behavior": "consistent",
-                    "stylistic_rule_handling": "flexible"
+                "chapter": {
+                    "number": 1,
+                    "title": "Der Anfang der Reise",
+                    "narrative_purpose": "Einführung der Hauptfigur und Aufbau der Spannung",
+                    "position_in_arc": "setup",
+                    "length_words": 800,
+                    "language_variants": ["de", "en"],
+                    "bilingual_sequence": ["de", "en"],
+                    "titles": {
+                        "de": "Der Anfang der Reise",
+                        "en": "The Beginning of the Journey"
+                    }
+                },
+                "characters": {
+                    "main_character": {
+                        "name": "Luna",
+                        "description": "Ein mutiges Mädchen mit magischen Fähigkeiten",
+                        "personality": "Neugierig, mutig und freundlich",
+                        "goals": "Die Geheimnisse des Waldes entdecken",
+                        "language_variants": {
+                            "de": {
+                                "name": "Luna",
+                                "description": "Ein mutiges Mädchen mit magischen Fähigkeiten"
+                            },
+                            "en": {
+                                "name": "Luna",
+                                "description": "A brave girl with magical abilities"
+                            }
+                        }
+                    },
+                    "supporting_characters": [
+                        {
+                            "name": "Waldgeist",
+                            "role": "Magischer Begleiter",
+                            "language_variants": {
+                                "de": {
+                                    "name": "Waldgeist",
+                                    "role": "Magischer Begleiter"
+                                },
+                                "en": {
+                                    "name": "Forest Spirit",
+                                    "role": "Magical companion"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "scene": {
+                    "setting": "Ein verzauberter Wald",
+                    "time": "Goldener Nachmittag",
+                    "atmosphere": "Magisch und aufregend",
+                    "language_variants": {
+                        "de": {
+                            "setting": "Ein verzauberter Wald",
+                            "time": "Goldener Nachmittag",
+                            "atmosphere": "Magisch und aufregend"
+                        },
+                        "en": {
+                            "setting": "An enchanted forest",
+                            "time": "Golden afternoon",
+                            "atmosphere": "Magical and exciting"
+                        }
+                    }
+                },
+                "plot": {
+                    "main_event": "Luna entdeckt den verzauberten Wald",
+                    "conflict": "Angst vor dem Unbekannten vs. Neugier",
+                    "resolution": "Freundschaft mit dem Waldgeist",
+                    "language_variants": {
+                        "de": {
+                            "main_event": "Luna entdeckt den verzauberten Wald",
+                            "conflict": "Angst vor dem Unbekannten vs. Neugier",
+                            "resolution": "Freundschaft mit dem Waldgeist"
+                        },
+                        "en": {
+                            "main_event": "Luna discovers the enchanted forest",
+                            "conflict": "Fear of the unknown vs. curiosity",
+                            "resolution": "Friendship with the forest spirit"
+                        }
+                    }
+                },
+                "style": {
+                    "dialogue_style": "natural_and_engaging",
+                    "pacing": "moderate",
+                    "tone": "Warm und ermutigend"
+                },
+                "emotions": {
+                    "primary_emotion": "wonder",
+                    "emotional_arc": "growth",
+                    "mood": "hopeful",
+                    "language_variants": {
+                        "de": {
+                            "primary_emotion": "wonder",
+                            "emotional_arc": "growth",
+                            "mood": "hopeful"
+                        },
+                        "en": {
+                            "primary_emotion": "wonder",
+                            "emotional_arc": "growth",
+                            "mood": "hopeful"
+                        }
+                    }
+                },
+                "language": {
+                    "bilingual_output": True,
+                    "target_languages": ["de", "en"],
+                    "separate_files": False,
+                    "cultural_adaptation": True
                 }
             }
         }
@@ -690,15 +757,22 @@ Mache den Arc überzeugend und bedeutungsvoll."""
             data = json.loads(json_str)
             
             # Schema-Validierung
-            errors = validate_json_schema(data)
-            if errors:
-                error_msg = "Validierungsfehler:\n" + "\n".join(errors)
-                messagebox.showerror("Validierungsfehler", error_msg)
+            schema_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "schema", "prompt_frame.schema.json")
+            is_valid, message = validate_json_schema(data, schema_file)
+            
+            if not is_valid:
+                messagebox.showerror("Validierungsfehler", f"Schema-Fehler: {message}")
                 self.status_var.set("Validierung fehlgeschlagen")
             else:
-                messagebox.showinfo("Erfolg", "JSON ist gültig!")
-                self.status_var.set("JSON validiert")
-                self.update_prompt()
+                # Zusätzliche Prompt-Struktur-Validierung
+                from compiler.prompt_compiler import validate_prompt_structure
+                if validate_prompt_structure(data):
+                    messagebox.showinfo("Erfolg", "JSON ist gültig!")
+                    self.status_var.set("JSON validiert")
+                    self.update_prompt()
+                else:
+                    messagebox.showerror("Validierungsfehler", "Ungültige Prompt-Struktur")
+                    self.status_var.set("Validierung fehlgeschlagen")
                 
         except json.JSONDecodeError as e:
             messagebox.showerror("JSON Fehler", f"Ungültiges JSON: {e}")

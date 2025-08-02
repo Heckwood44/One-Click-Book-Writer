@@ -1,0 +1,225 @@
+{
+  "api_calls": [
+    {
+      "timestamp": "2025-08-03T00:15:01.471695",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 116,
+      "output_tokens": 270,
+      "total_tokens": 386,
+      "cost_usd": 0.01968
+    },
+    {
+      "timestamp": "2025-08-03T00:16:17.954408",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 116,
+      "output_tokens": 270,
+      "total_tokens": 386,
+      "cost_usd": 0.01968
+    },
+    {
+      "timestamp": "2025-08-03T00:31:42.856601",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 171,
+      "output_tokens": 399,
+      "total_tokens": 570,
+      "cost_usd": 0.02907
+    },
+    {
+      "timestamp": "2025-08-03T00:34:12.035812",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 164,
+      "output_tokens": 384,
+      "total_tokens": 548,
+      "cost_usd": 0.02796
+    },
+    {
+      "timestamp": "2025-08-03T00:35:31.513114",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 141,
+      "output_tokens": 330,
+      "total_tokens": 471,
+      "cost_usd": 0.024030000000000003
+    },
+    {
+      "timestamp": "2025-08-03T00:55:03.879246",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 149,
+      "output_tokens": 347,
+      "total_tokens": 496,
+      "cost_usd": 0.02529
+    },
+    {
+      "timestamp": "2025-08-03T00:58:50.092402",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 156,
+      "output_tokens": 365,
+      "total_tokens": 521,
+      "cost_usd": 0.02658
+    },
+    {
+      "timestamp": "2025-08-03T01:08:19.670774",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 167,
+      "output_tokens": 389,
+      "total_tokens": 556,
+      "cost_usd": 0.02835
+    },
+    {
+      "timestamp": "2025-08-03T01:09:00.225412",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 175,
+      "output_tokens": 410,
+      "total_tokens": 585,
+      "cost_usd": 0.029849999999999995
+    },
+    {
+      "timestamp": "2025-08-03T01:09:59.873600",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 165,
+      "output_tokens": 386,
+      "total_tokens": 551,
+      "cost_usd": 0.02811
+    },
+    {
+      "timestamp": "2025-08-03T01:11:35.713851",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 162,
+      "output_tokens": 380,
+      "total_tokens": 542,
+      "cost_usd": 0.02766
+    },
+    {
+      "timestamp": "2025-08-03T01:13:20.119789",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 183,
+      "output_tokens": 427,
+      "total_tokens": 610,
+      "cost_usd": 0.03111
+    },
+    {
+      "timestamp": "2025-08-03T01:15:09.912580",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 164,
+      "output_tokens": 382,
+      "total_tokens": 546,
+      "cost_usd": 0.02784
+    },
+    {
+      "timestamp": "2025-08-03T01:16:22.822366",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 214,
+      "output_tokens": 500,
+      "total_tokens": 714,
+      "cost_usd": 0.03642
+    },
+    {
+      "timestamp": "2025-08-03T01:16:54.343299",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 149,
+      "output_tokens": 348,
+      "total_tokens": 497,
+      "cost_usd": 0.025349999999999998
+    },
+    {
+      "timestamp": "2025-08-03T01:23:04.710049",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 235,
+      "output_tokens": 550,
+      "total_tokens": 785,
+      "cost_usd": 0.04005
+    },
+    {
+      "timestamp": "2025-08-03T01:24:20.852332",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 244,
+      "output_tokens": 570,
+      "total_tokens": 814,
+      "cost_usd": 0.041519999999999994
+    },
+    {
+      "timestamp": "2025-08-03T01:25:10.770818",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 297,
+      "output_tokens": 693,
+      "total_tokens": 990,
+      "cost_usd": 0.05048999999999999
+    },
+    {
+      "timestamp": "2025-08-03T01:26:31.025259",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 205,
+      "output_tokens": 478,
+      "total_tokens": 683,
+      "cost_usd": 0.03483
+    },
+    {
+      "timestamp": "2025-08-03T01:38:00.108516",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 177,
+      "output_tokens": 413,
+      "total_tokens": 590,
+      "cost_usd": 0.030089999999999995
+    },
+    {
+      "timestamp": "2025-08-03T01:39:06.039373",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 236,
+      "output_tokens": 550,
+      "total_tokens": 786,
+      "cost_usd": 0.040080000000000005
+    },
+    {
+      "timestamp": "2025-08-03T01:39:42.028862",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 228,
+      "output_tokens": 532,
+      "total_tokens": 760,
+      "cost_usd": 0.03876
+    }
+  ],
+  "summary": {}
+}

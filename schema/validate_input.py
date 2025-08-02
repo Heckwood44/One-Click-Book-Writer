@@ -6,37 +6,30 @@ from jsonschema import validate, ValidationError
 logger = logging.getLogger(__name__)
 
 
-def validate_json_schema(data: Dict[str, Any], schema_path: str) -> bool:
+def validate_json_schema(data: Dict[str, Any], schema_path: str) -> (bool, str):
     """
     Validiert JSON-Daten gegen ein Schema.
-    
-    Args:
-        data: Zu validierende Daten
-        schema_path: Pfad zur Schema-Datei
-        
     Returns:
-        True wenn gültig, False sonst
+        (True, "OK") wenn gültig, (False, Fehlertext) sonst
     """
     try:
         with open(schema_path, 'r', encoding='utf-8') as f:
             schema = json.load(f)
-        
         validate(instance=data, schema=schema)
         logger.info("JSON-Schema-Validierung erfolgreich")
-        return True
-        
+        return True, "OK"
     except FileNotFoundError:
         logger.error(f"Schema-Datei nicht gefunden: {schema_path}")
-        return False
+        return False, f"Schema-Datei nicht gefunden: {schema_path}"
     except json.JSONDecodeError as e:
         logger.error(f"Ungültige Schema-Datei: {e}")
-        return False
+        return False, f"Ungültige Schema-Datei: {e}"
     except ValidationError as e:
         logger.error(f"Schema-Validierungsfehler: {e}")
-        return False
+        return False, f"Schema-Validierungsfehler: {e}"
     except Exception as e:
         logger.error(f"Unerwarteter Fehler bei der Schema-Validierung: {e}")
-        return False
+        return False, f"Unerwarteter Fehler: {e}"
 
 
 def validate_prompt_frame_structure(data: Dict[str, Any]) -> bool:

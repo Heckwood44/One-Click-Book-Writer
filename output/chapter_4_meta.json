@@ -1,0 +1,173 @@
+{
+  "chapter_number": 4,
+  "prompt_versioning": {
+    "total_versions": 2,
+    "latest_version_hash": "89aba4b52c23ea74",
+    "latest_optimized_hash": "073f56b7619789e5",
+    "latest_timestamp": "2025-08-03T01:15:09.911803",
+    "prompt_length": 4206,
+    "optimized_length": 2191,
+    "diff": {
+      "raw_lines": 110,
+      "optimized_lines": 56,
+      "line_difference": -54,
+      "character_difference": -2015
+    }
+  },
+  "book_metadata": {
+    "book_title": "Die Abenteuer des kleinen Drachen",
+    "chapter_title": "Der erste Flug",
+    "genre": "Kinderbuch",
+    "is_bilingual": true
+  },
+  "quality_evaluation": {
+    "german_evaluation": {
+      "overall_score": 0.659,
+      "quality_level": "Good",
+      "review_required": true,
+      "critical_issues": false,
+      "flags": [
+        "EMOTION_PROBLEM",
+        "STRUCTURE_PROBLEM"
+      ],
+      "weights": {
+        "word_limit_compliance": 0.25,
+        "core_emotion_presence": 0.2,
+        "repetition_penalty": 0.15,
+        "readability": 0.2,
+        "structure_quality": 0.2
+      },
+      "individual_scores": {
+        "word_limit_compliance": {
+          "score": 0.93,
+          "details": {
+            "actual_words": 828,
+            "target_words": 800,
+            "deviation_percent": 3.5,
+            "score": 0.93
+          }
+        },
+        "core_emotion_presence": {
+          "score": 0.0,
+          "details": {
+            "target_emotion": "wonder",
+            "emotion_count": 0,
+            "total_words": 828,
+            "emotion_ratio": 0.0,
+            "optimal_ratio": 2.0,
+            "score": 0.0
+          }
+        },
+        "repetition_penalty": {
+          "score": 0.776,
+          "details": {
+            "unique_words": 482,
+            "total_words": 828,
+            "repetition_ratio": 41.79,
+            "optimal_repetition": 25.0,
+            "score": 0.776
+          }
+        },
+        "readability": {
+          "score": 1.0,
+          "details": {
+            "target_audience": "Kinder im Alter von 6-10 Jahren",
+            "avg_sentence_length": 10.97,
+            "sentence_count": 76,
+            "score": 1.0
+          }
+        },
+        "structure_quality": {
+          "score": 0.55,
+          "details": {
+            "paragraph_count": 26,
+            "avg_paragraph_length": 31.85,
+            "length_score": 0.8,
+            "count_score": 0.3,
+            "structure_score": 0.55
+          }
+        }
+      },
+      "improvement_suggestions": [
+        "Kernemotion stärker hervorheben",
+        "Absatzstruktur verbessern"
+      ]
+    },
+    "english_evaluation": {
+      "overall_score": 0.484,
+      "quality_level": "Fair",
+      "review_required": true,
+      "critical_issues": true,
+      "flags": [
+        "WORTLIMIT_PROBLEM",
+        "EMOTION_PROBLEM"
+      ],
+      "weights": {
+        "word_limit_compliance": 0.25,
+        "core_emotion_presence": 0.2,
+        "repetition_penalty": 0.15,
+        "readability": 0.2,
+        "structure_quality": 0.2
+      },
+      "individual_scores": {
+        "word_limit_compliance": {
+          "score": 0.047,
+          "details": {
+            "actual_words": 419,
+            "target_words": 800,
+            "deviation_percent": 47.62,
+            "score": 0.047
+          }
+        },
+        "core_emotion_presence": {
+          "score": 0.0,
+          "details": {
+            "target_emotion": "wonder",
+            "emotion_count": 0,
+            "total_words": 419,
+            "emotion_ratio": 0.0,
+            "optimal_ratio": 2.0,
+            "score": 0.0
+          }
+        },
+        "repetition_penalty": {
+          "score": 0.811,
+          "details": {
+            "unique_words": 255,
+            "total_words": 419,
+            "repetition_ratio": 39.14,
+            "optimal_repetition": 25.0,
+            "score": 0.811
+          }
+        },
+        "readability": {
+          "score": 1.0,
+          "details": {
+            "target_audience": "Kinder im Alter von 6-10 Jahren",
+            "avg_sentence_length": 11.11,
+            "sentence_count": 38,
+            "score": 1.0
+          }
+        },
+        "structure_quality": {
+          "score": 0.75,
+          "details": {
+            "paragraph_count": 12,
+            "avg_paragraph_length": 34.92,
+            "length_score": 0.8,
+            "count_score": 0.7,
+            "structure_score": 0.75
+          }
+        }
+      },
+      "improvement_suggestions": [
+        "Wortanzahl anpassen - Ziel besser einhalten",
+        "Kernemotion stärker hervorheben"
+      ]
+    },
+    "consistency_score": 0.484,
+    "overall_bilingual_score": 0.542
+  },
+  "review_required": true,
+  "review_reason": "Qualitäts-Score 0.542 unter Schwellenwert 0.7"
+}

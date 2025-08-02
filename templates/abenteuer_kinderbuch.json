@@ -1,0 +1,118 @@
+{
+  "input": {
+    "book": {
+      "title": "Die große Schatzsuche",
+      "genre": "Abenteuer",
+      "target_audience": "children",
+      "theme": "Teamwork und Freundschaft",
+      "setting": "Eine geheimnisvolle Insel",
+      "titles": {
+        "de": "Die große Schatzsuche",
+        "en": "The Great Treasure Hunt"
+      }
+    },
+    "chapter": {
+      "number": 1,
+      "title": "Die Ankunft auf der Insel",
+      "narrative_purpose": "Einführung der Charaktere und der Insel",
+      "position_in_arc": "setup",
+      "length_words": 800,
+      "titles": {
+        "de": "Die Ankunft auf der Insel",
+        "en": "Arrival on the Island"
+      }
+    },
+    "characters": {
+      "main_character": {
+        "name": "Max",
+        "description": "Ein mutiger Junge mit einer Schatzkarte",
+        "personality": "Entschlossen, hilfsbereit und neugierig",
+        "goals": "Den versteckten Schatz finden",
+        "language_variants": {
+          "de": {
+            "name": "Max",
+            "description": "Ein mutiger Junge mit einer Schatzkarte",
+            "personality": "Entschlossen, hilfsbereit und neugierig",
+            "goals": "Den versteckten Schatz finden"
+          },
+          "en": {
+            "name": "Max",
+            "description": "A brave boy with a treasure map",
+            "personality": "Determined, helpful and curious",
+            "goals": "Find the hidden treasure"
+          }
+        }
+      }
+    },
+    "scene": {
+      "setting": "Ein tropischer Strand mit Palmen",
+      "time": "Früher Morgen",
+      "atmosphere": "Aufregend und geheimnisvoll",
+      "language_variants": {
+        "de": {
+          "setting": "Ein tropischer Strand mit Palmen",
+          "time": "Früher Morgen",
+          "atmosphere": "Aufregend und geheimnisvoll"
+        },
+        "en": {
+          "setting": "A tropical beach with palm trees",
+          "time": "Early morning",
+          "atmosphere": "Exciting and mysterious"
+        }
+      }
+    },
+    "plot": {
+      "main_event": "Max und seine Freunde erreichen die Insel",
+      "conflict": "Unbekanntes Terrain vs. Abenteuerlust",
+      "resolution": "Sie beschließen, die Schatzsuche zu beginnen",
+      "language_variants": {
+        "de": {
+          "main_event": "Max und seine Freunde erreichen die Insel",
+          "conflict": "Unbekanntes Terrain vs. Abenteuerlust",
+          "resolution": "Sie beschließen, die Schatzsuche zu beginnen"
+        },
+        "en": {
+          "main_event": "Max and his friends reach the island",
+          "conflict": "Unknown terrain vs. sense of adventure",
+          "resolution": "They decide to begin the treasure hunt"
+        }
+      }
+    },
+    "style": {
+      "tone": "Spannend und optimistisch",
+      "pacing": "Schnell und actionreich",
+      "dialogue_style": "Energisch und freundschaftlich",
+      "language_variants": {
+        "de": {
+          "tone": "Spannend und optimistisch",
+          "pacing": "Schnell und actionreich",
+          "dialogue_style": "Energisch und freundschaftlich"
+        },
+        "en": {
+          "tone": "Exciting and optimistic",
+          "pacing": "Fast and action-packed",
+          "dialogue_style": "Energetic and friendly"
+        }
+      }
+    },
+    "emotions": {
+      "core_emotion": "excitement",
+      "emotional_arc": "Von Nervosität zu Begeisterung",
+      "language_variants": {
+        "de": {
+          "core_emotion": "aufregung",
+          "emotional_arc": "Von Nervosität zu Begeisterung"
+        },
+        "en": {
+          "core_emotion": "excitement",
+          "emotional_arc": "From nervousness to excitement"
+        }
+      }
+    },
+    "language": {
+      "bilingual_output": true,
+      "target_languages": ["de", "en"],
+      "bilingual_sequence": ["de", "en"]
+    }
+  }
+} 

@@ -1,0 +1,118 @@
+{
+  "input": {
+    "book": {
+      "title": "Die magische Reise",
+      "genre": "Fantasy",
+      "target_audience": "children",
+      "theme": "Mut und Selbstvertrauen",
+      "setting": "Ein verzauberter Wald",
+      "titles": {
+        "de": "Die magische Reise",
+        "en": "The Magical Journey"
+      }
+    },
+    "chapter": {
+      "number": 1,
+      "title": "Der Anfang der Reise",
+      "narrative_purpose": "Einführung der Hauptfigur und Aufbau der Spannung",
+      "position_in_arc": "setup",
+      "length_words": 800,
+      "titles": {
+        "de": "Der Anfang der Reise",
+        "en": "The Beginning of the Journey"
+      }
+    },
+    "characters": {
+      "main_character": {
+        "name": "Luna",
+        "description": "Ein mutiges Mädchen mit magischen Fähigkeiten",
+        "personality": "Neugierig, mutig und freundlich",
+        "goals": "Die Geheimnisse des Waldes entdecken",
+        "language_variants": {
+          "de": {
+            "name": "Luna",
+            "description": "Ein mutiges Mädchen mit magischen Fähigkeiten",
+            "personality": "Neugierig, mutig und freundlich",
+            "goals": "Die Geheimnisse des Waldes entdecken"
+          },
+          "en": {
+            "name": "Luna",
+            "description": "A brave girl with magical abilities",
+            "personality": "Curious, brave and friendly",
+            "goals": "Discover the secrets of the forest"
+          }
+        }
+      }
+    },
+    "scene": {
+      "setting": "Ein verzauberter Wald mit leuchtenden Bäumen",
+      "time": "Goldener Nachmittag",
+      "atmosphere": "Mystisch und aufregend",
+      "language_variants": {
+        "de": {
+          "setting": "Ein verzauberter Wald mit leuchtenden Bäumen",
+          "time": "Goldener Nachmittag",
+          "atmosphere": "Mystisch und aufregend"
+        },
+        "en": {
+          "setting": "An enchanted forest with glowing trees",
+          "time": "Golden afternoon",
+          "atmosphere": "Mystical and exciting"
+        }
+      }
+    },
+    "plot": {
+      "main_event": "Luna entdeckt einen magischen Pfad",
+      "conflict": "Angst vor dem Unbekannten vs. Neugier",
+      "resolution": "Luna beschließt, dem Pfad zu folgen",
+      "language_variants": {
+        "de": {
+          "main_event": "Luna entdeckt einen magischen Pfad",
+          "conflict": "Angst vor dem Unbekannten vs. Neugier",
+          "resolution": "Luna beschließt, dem Pfad zu folgen"
+        },
+        "en": {
+          "main_event": "Luna discovers a magical path",
+          "conflict": "Fear of the unknown vs. curiosity",
+          "resolution": "Luna decides to follow the path"
+        }
+      }
+    },
+    "style": {
+      "tone": "Warm und ermutigend",
+      "pacing": "Gemächlich mit Spannungsmomenten",
+      "dialogue_style": "Natürlich und kindgerecht",
+      "language_variants": {
+        "de": {
+          "tone": "Warm und ermutigend",
+          "pacing": "Gemächlich mit Spannungsmomenten",
+          "dialogue_style": "Natürlich und kindgerecht"
+        },
+        "en": {
+          "tone": "Warm and encouraging",
+          "pacing": "Leisurely with moments of tension",
+          "dialogue_style": "Natural and child-friendly"
+        }
+      }
+    },
+    "emotions": {
+      "core_emotion": "wonder",
+      "emotional_arc": "Von Nervosität zu Staunen",
+      "language_variants": {
+        "de": {
+          "core_emotion": "staunen",
+          "emotional_arc": "Von Nervosität zu Staunen"
+        },
+        "en": {
+          "core_emotion": "wonder",
+          "emotional_arc": "From nervousness to wonder"
+        }
+      }
+    },
+    "language": {
+      "bilingual_output": true,
+      "target_languages": ["de", "en"],
+      "bilingual_sequence": ["de", "en"]
+    }
+  }
+} 

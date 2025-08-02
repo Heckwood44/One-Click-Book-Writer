@@ -31,6 +31,33 @@ class ClaudeAdapter:
         self.client = Anthropic(api_key=self.api_key)
         self.model = "claude-3-opus-20240229"
         
+    def is_available(self) -> bool:
+        """
+        Prüft, ob der Claude Adapter verfügbar ist.
+        
+        Returns:
+            True wenn API-Key gesetzt ist
+        """
+        return bool(self.api_key)
+        
+    def generate_text(self, prompt: str, **kwargs) -> str:
+        """
+        Generiert Text mit Claude (Wrapper für generate_chapter).
+        
+        Args:
+            prompt: Prompt-Text
+            **kwargs: Zusätzliche Parameter
+            
+        Returns:
+            Generierter Text als String
+        """
+        try:
+            result = self.generate_chapter(prompt, **kwargs)
+            return result.get("text", "")
+        except Exception as e:
+            logger.error(f"Fehler bei generate_text: {e}")
+            return ""
+        
     def generate_chapter(self, prompt: str, **kwargs) -> Dict[str, Any]:
         """
         Generiert ein Kapitel mit Claude basierend auf dem kompilierten Prompt.
@@ -46,7 +73,7 @@ class ClaudeAdapter:
             # Standard-Parameter
             params = {
                 "model": self.model,
-                "max_tokens": kwargs.get("max_tokens", 8000),
+                "max_tokens": kwargs.get("max_tokens", 4000),  # Reduziert von 8000 auf 4000
                 "temperature": kwargs.get("temperature", 0.4),
                 "system": "Du bist ein erfahrener Autor und Schriftsteller. Schreibe kreative, fesselnde Kapitel.",
                 "messages": [

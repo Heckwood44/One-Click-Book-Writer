@@ -1,0 +1,857 @@
+{
+  "versions": [
+    {
+      "timestamp": "2025-08-03T00:08:14.989196",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:09:01.517778",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:09:35.392052",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:09:56.658690",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:13:05.955732",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:15:01.471401",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:16:17.634000",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "4f4bc5bb0288c77c",
+      "optimized_prompt_hash": null,
+      "prompt_length": 1551,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:31:14.899113",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3290,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:31:42.856168",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": "2cdb3f149eb30044",
+      "prompt_length": 3290,
+      "optimized_length": 2281,
+      "diff": {
+        "raw_lines": 99,
+        "optimized_lines": 45,
+        "line_difference": -54,
+        "character_difference": -1009
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:33:42.695643",
+      "chapter_number": 2,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3290,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:34:12.035208",
+      "chapter_number": 2,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": "b4025bcc661f5323",
+      "prompt_length": 3290,
+      "optimized_length": 2199,
+      "diff": {
+        "raw_lines": 99,
+        "optimized_lines": 52,
+        "line_difference": -47,
+        "character_difference": -1091
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:35:06.610474",
+      "chapter_number": 3,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3290,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:35:31.512515",
+      "chapter_number": 3,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": "12d75d52779a627f",
+      "prompt_length": 3290,
+      "optimized_length": 1890,
+      "diff": {
+        "raw_lines": 99,
+        "optimized_lines": 57,
+        "line_difference": -42,
+        "character_difference": -1400
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:54:36.137241",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3290,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:55:03.878777",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": "01ccb44a1a6c2a23",
+      "prompt_length": 3290,
+      "optimized_length": 1991,
+      "diff": {
+        "raw_lines": 99,
+        "optimized_lines": 54,
+        "line_difference": -45,
+        "character_difference": -1299
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:58:24.795609",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3290,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T00:58:50.091832",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "8b0088df7cd5116f",
+      "optimized_prompt_hash": "be82b05f500bae77",
+      "prompt_length": 3290,
+      "optimized_length": 2091,
+      "diff": {
+        "raw_lines": 99,
+        "optimized_lines": 54,
+        "line_difference": -45,
+        "character_difference": -1199
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:07:52.846662",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "9617713b86ab8cf7",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3594,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:08:19.670183",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "9617713b86ab8cf7",
+      "optimized_prompt_hash": "ab6688bf631d89db",
+      "prompt_length": 3594,
+      "optimized_length": 2228,
+      "diff": {
+        "raw_lines": 103,
+        "optimized_lines": 48,
+        "line_difference": -55,
+        "character_difference": -1366
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:08:27.408480",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "9617713b86ab8cf7",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3594,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:09:00.224836",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "9617713b86ab8cf7",
+      "optimized_prompt_hash": "02d8ae3634389d18",
+      "prompt_length": 3594,
+      "optimized_length": 2347,
+      "diff": {
+        "raw_lines": 103,
+        "optimized_lines": 60,
+        "line_difference": -43,
+        "character_difference": -1247
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:09:29.720629",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "9617713b86ab8cf7",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3594,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:09:59.872523",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "9617713b86ab8cf7",
+      "optimized_prompt_hash": "560befb61315fa37",
+      "prompt_length": 3594,
+      "optimized_length": 2208,
+      "diff": {
+        "raw_lines": 103,
+        "optimized_lines": 61,
+        "line_difference": -42,
+        "character_difference": -1386
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:11:06.361747",
+      "chapter_number": 2,
+      "language": "de",
+      "raw_prompt_hash": "a8e36c4e99713137",
+      "optimized_prompt_hash": null,
+      "prompt_length": 3682,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:11:35.713024",
+      "chapter_number": 2,
+      "language": "de",
+      "raw_prompt_hash": "a8e36c4e99713137",
+      "optimized_prompt_hash": "1ed0f769debcdd46",
+      "prompt_length": 3682,
+      "optimized_length": 2173,
+      "diff": {
+        "raw_lines": 104,
+        "optimized_lines": 47,
+        "line_difference": -57,
+        "character_difference": -1509
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:12:49.357682",
+      "chapter_number": 3,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4206,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:13:20.118800",
+      "chapter_number": 3,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": "ebc4f1bd352701b3",
+      "prompt_length": 4206,
+      "optimized_length": 2443,
+      "diff": {
+        "raw_lines": 110,
+        "optimized_lines": 51,
+        "line_difference": -59,
+        "character_difference": -1763
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:14:39.686147",
+      "chapter_number": 4,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4206,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:15:09.911803",
+      "chapter_number": 4,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": "073f56b7619789e5",
+      "prompt_length": 4206,
+      "optimized_length": 2191,
+      "diff": {
+        "raw_lines": 110,
+        "optimized_lines": 56,
+        "line_difference": -54,
+        "character_difference": -2015
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:15:47.773523",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4206,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:16:22.820754",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": "aeb1374182cec6b6",
+      "prompt_length": 4206,
+      "optimized_length": 2863,
+      "diff": {
+        "raw_lines": 110,
+        "optimized_lines": 51,
+        "line_difference": -59,
+        "character_difference": -1343
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:16:25.929834",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4206,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:16:54.342326",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "89aba4b52c23ea74",
+      "optimized_prompt_hash": "f289eaaebd793429",
+      "prompt_length": 4206,
+      "optimized_length": 1995,
+      "diff": {
+        "raw_lines": 110,
+        "optimized_lines": 42,
+        "line_difference": -68,
+        "character_difference": -2211
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:22:27.070093",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4022,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:23:04.708764",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": "0b176aeb1369ab25",
+      "prompt_length": 4022,
+      "optimized_length": 3146,
+      "diff": {
+        "raw_lines": 100,
+        "optimized_lines": 91,
+        "line_difference": -9,
+        "character_difference": -876
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:23:41.172672",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4022,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:24:20.850544",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": "2345d42b214104b8",
+      "prompt_length": 4022,
+      "optimized_length": 3263,
+      "diff": {
+        "raw_lines": 100,
+        "optimized_lines": 88,
+        "line_difference": -12,
+        "character_difference": -759
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:24:24.059597",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4022,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:25:10.770106",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": "63c3e4fd0ecd3f94",
+      "prompt_length": 4022,
+      "optimized_length": 3965,
+      "diff": {
+        "raw_lines": 100,
+        "optimized_lines": 106,
+        "line_difference": 6,
+        "character_difference": -57
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:25:53.554404",
+      "chapter_number": 5,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4022,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:26:31.023337",
+      "chapter_number": 5,
+      "language": "de",
+      "raw_prompt_hash": "7a4a6e1557250042",
+      "optimized_prompt_hash": "9d6d1c886f2421e5",
+      "prompt_length": 4022,
+      "optimized_length": 2737,
+      "diff": {
+        "raw_lines": 100,
+        "optimized_lines": 54,
+        "line_difference": -46,
+        "character_difference": -1285
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:37:28.985606",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "998fa1af57e8a3cd",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4095,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:38:00.107741",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "998fa1af57e8a3cd",
+      "optimized_prompt_hash": "81f149c9bf78d4d4",
+      "prompt_length": 4095,
+      "optimized_length": 2360,
+      "diff": {
+        "raw_lines": 101,
+        "optimized_lines": 54,
+        "line_difference": -47,
+        "character_difference": -1735
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:38:29.500193",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "998fa1af57e8a3cd",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4095,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:39:06.037051",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "998fa1af57e8a3cd",
+      "optimized_prompt_hash": "09687081dbe6475e",
+      "prompt_length": 4095,
+      "optimized_length": 3148,
+      "diff": {
+        "raw_lines": 101,
+        "optimized_lines": 79,
+        "line_difference": -22,
+        "character_difference": -947
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:39:09.061244",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "998fa1af57e8a3cd",
+      "optimized_prompt_hash": null,
+      "prompt_length": 4095,
+      "optimized_length": null,
+      "diff": null,
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    },
+    {
+      "timestamp": "2025-08-03T01:39:42.027508",
+      "chapter_number": 1,
+      "language": "de",
+      "raw_prompt_hash": "998fa1af57e8a3cd",
+      "optimized_prompt_hash": "8dd24409685099e1",
+      "prompt_length": 4095,
+      "optimized_length": 3042,
+      "diff": {
+        "raw_lines": 101,
+        "optimized_lines": 85,
+        "line_difference": -16,
+        "character_difference": -1053
+      },
+      "metadata": {
+        "book_title": "Die Abenteuer des kleinen Drachen",
+        "chapter_title": "Der erste Flug",
+        "genre": "Kinderbuch",
+        "is_bilingual": true
+      }
+    }
+  ],
+  "metadata": {}
+}
