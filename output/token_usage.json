@@ -219,6 +219,36 @@
       "output_tokens": 532,
       "total_tokens": 760,
       "cost_usd": 0.03876
+    },
+    {
+      "timestamp": "2025-08-03T01:42:09.354189",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 174,
+      "output_tokens": 407,
+      "total_tokens": 581,
+      "cost_usd": 0.029639999999999996
+    },
+    {
+      "timestamp": "2025-08-03T01:47:04.477562",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 270,
+      "output_tokens": 630,
+      "total_tokens": 900,
+      "cost_usd": 0.045899999999999996
+    },
+    {
+      "timestamp": "2025-08-03T01:48:06.639397",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 177,
+      "output_tokens": 413,
+      "total_tokens": 590,
+      "cost_usd": 0.030089999999999995
     }
   ],
   "summary": {}
