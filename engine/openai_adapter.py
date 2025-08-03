@@ -28,7 +28,20 @@ class OpenAIAdapter:
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY ist erforderlich")
             
-        self.client = OpenAI(api_key=self.api_key)
+        # Erstelle Client ohne Proxy-Parameter (kompatibel mit neueren Versionen)
+        try:
+            self.client = OpenAI(api_key=self.api_key)
+        except TypeError as e:
+            if "proxies" in str(e):
+                # Fallback für ältere Versionen
+                import httpx
+                self.client = OpenAI(
+                    api_key=self.api_key,
+                    http_client=httpx.Client()
+                )
+            else:
+                raise
+                
         self.model = "gpt-4-turbo-preview"
         
     def is_available(self) -> bool:

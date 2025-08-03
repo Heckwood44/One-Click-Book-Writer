@@ -28,7 +28,20 @@ class ClaudeAdapter:
         if not self.api_key:
             raise ValueError("ANTHROPIC_API_KEY ist erforderlich")
             
-        self.client = Anthropic(api_key=self.api_key)
+        # Erstelle Client ohne Proxy-Parameter (kompatibel mit neueren Versionen)
+        try:
+            self.client = Anthropic(api_key=self.api_key)
+        except TypeError as e:
+            if "proxies" in str(e):
+                # Fallback für ältere Versionen
+                import httpx
+                self.client = Anthropic(
+                    api_key=self.api_key,
+                    http_client=httpx.Client()
+                )
+            else:
+                raise
+                
         self.model = "claude-3-opus-20240229"
         
     def is_available(self) -> bool:

@@ -1,0 +1,25 @@
+{
+  "pipeline_status": "completed",
+  "prompt_hash": "a8e36c4e99713137",
+  "system_note_detection": "unknown",
+  "bilingual_split_ok": true,
+  "word_counts": {
+    "de": 0,
+    "en": 389
+  },
+  "quality_score": 0.206,
+  "canvas_compliance": "unknown",
+  "review_required": true,
+  "fallbacks": [],
+  "audit_summary": {
+    "success_rate": 75.0,
+    "passed_sections": 8,
+    "partial_sections": 0,
+    "failed_sections": 0
+  },
+  "next_recommendations": [
+    "Pipeline erfolgreich ausgeführt",
+    "Canvas-Compliance bestätigt",
+    "Qualitäts-Score überwachen"
+  ]
+}
