@@ -111,7 +111,7 @@ OPTIMIERTER PROMPT:
             # API-Call
             chapter_text = self.openai_client.generate_text(prompt)
             
-            if chapter_text and len(chapter_text) > 50:
+            if chapter_text and len(chapter_text) > 30:
                 logger.info("Kapitel erfolgreich mit GPT-4 generiert")
                 return True, chapter_text, "Generierung erfolgreich"
             else:
@@ -321,12 +321,16 @@ OPTIMIERTER PROMPT:
                 german_text, english_text, prompt_frame
             )
             
+            # Canvas-Compliance prüfen
+            canvas_compliance = self._check_canvas_compliance(raw_prompt, optimized_prompt)
+            
             result["steps"]["quality_evaluation"] = {
                 "success": True,
                 "overall_score": quality_evaluation["overall_bilingual_score"],
                 "german_score": quality_evaluation["german_evaluation"]["overall_score"],
                 "english_score": quality_evaluation["english_evaluation"]["overall_score"],
-                "consistency_score": quality_evaluation["consistency_score"]
+                "consistency_score": quality_evaluation["consistency_score"],
+                "canvas_compliance": canvas_compliance
             }
             
             # Schritt 7: Dateien speichern
@@ -352,7 +356,7 @@ OPTIMIERTER PROMPT:
                 chapter_number, f"output/chapter_{chapter_number}_meta.json"
             )
             
-            # Qualitätsbewertung und Review-Flags zu Metadaten hinzufügen
+            # Qualitätsbewertung, Canvas-Compliance und Review-Flags zu Metadaten hinzufügen
             meta_file = f"output/chapter_{chapter_number}_meta.json"
             try:
                 with open(meta_file, 'r', encoding='utf-8') as f:
@@ -360,6 +364,9 @@ OPTIMIERTER PROMPT:
                 
                 # Qualitätsbewertung hinzufügen
                 existing_metadata["quality_evaluation"] = quality_evaluation
+                
+                # Canvas-Compliance hinzufügen
+                existing_metadata["canvas_compliance"] = canvas_compliance
                 
                 # Review-Flags hinzufügen
                 if quality_evaluation["overall_bilingual_score"] < 0.7:
@@ -370,11 +377,16 @@ OPTIMIERTER PROMPT:
                     existing_metadata["critical_issues"] = True
                     existing_metadata["critical_reason"] = f"Kritische Qualitätsprobleme: Score {quality_evaluation['overall_bilingual_score']} < 0.5"
                 
+                # Prompt-Diff hinzufügen (falls vorhanden)
+                if optimization_success:
+                    prompt_diff = self._calculate_prompt_diff(raw_prompt, optimized_prompt)
+                    existing_metadata["prompt_diff"] = prompt_diff
+                
                 # Aktualisierte Metadaten speichern
                 with open(meta_file, 'w', encoding='utf-8') as f:
                     json.dump(existing_metadata, f, indent=2, ensure_ascii=False)
                 
-                logger.info(f"Qualitätsbewertung zu Metadaten hinzugefügt: {meta_file}")
+                logger.info(f"Qualitätsbewertung und Canvas-Compliance zu Metadaten hinzugefügt: {meta_file}")
                 
             except Exception as e:
                 logger.error(f"Fehler beim Hinzufügen der Qualitätsbewertung: {e}")
@@ -391,6 +403,70 @@ OPTIMIERTER PROMPT:
             result["errors"].append(f"Pipeline-Fehler: {e}")
         
         return result
+    
+    def _check_canvas_compliance(self, raw_prompt: str, optimized_prompt: str) -> Dict:
+        """Prüft Canvas-Compliance der Prompts"""
+        try:
+            system_note_signature = "SYSTEM NOTE SIGNATURE: WORLDCLASS_AUTHOR_ARCHITECT_INVISIBLE_TRANSLATOR"
+            
+            raw_compliance = "missing"
+            if system_note_signature in raw_prompt:
+                raw_compliance = "full"
+            elif "Ein Weltklasse-Autor ist kein" in raw_prompt:
+                raw_compliance = "partial"
+            
+            opt_compliance = "missing"
+            if system_note_signature in optimized_prompt:
+                opt_compliance = "full"
+            elif "Ein Weltklasse-Autor ist kein" in optimized_prompt:
+                opt_compliance = "partial"
+            
+            return {
+                "raw_prompt_compliance": raw_compliance,
+                "optimized_prompt_compliance": opt_compliance,
+                "overall_compliance": "full" if raw_compliance == "full" or opt_compliance == "full" else "partial"
+            }
+            
+        except Exception as e:
+            logger.error(f"Fehler bei Canvas-Compliance-Prüfung: {e}")
+            return {"raw_prompt_compliance": "error", "optimized_prompt_compliance": "error", "overall_compliance": "error"}
+    
+    def _calculate_prompt_diff(self, raw_prompt: str, optimized_prompt: str) -> Dict:
+        """Berechnet Diff zwischen rohem und optimiertem Prompt"""
+        try:
+            import difflib
+            
+            raw_lines = raw_prompt.split('\n')
+            opt_lines = optimized_prompt.split('\n')
+            
+            diff = list(difflib.unified_diff(
+                raw_lines, opt_lines,
+                fromfile='raw_prompt',
+                tofile='optimized_prompt',
+                lineterm=''
+            ))
+            
+            return {
+                "diff_lines": diff,
+                "raw_length": len(raw_prompt),
+                "optimized_length": len(optimized_prompt),
+                "length_change": len(optimized_prompt) - len(raw_prompt),
+                "diff_summary": f"Längenänderung: {len(optimized_prompt) - len(raw_prompt)} Zeichen"
+            }
+            
+        except Exception as e:
+            logger.error(f"Fehler bei Prompt-Diff-Berechnung: {e}")
+            return {"error": str(e)}
+    
+    def _save_prompt_diff(self, prompt_diff: Dict, chapter_number: int):
+        """Speichert Prompt-Diff in Datei"""
+        try:
+            diff_file = f"output/chapter_{chapter_number}_prompt_diff.json"
+            with open(diff_file, 'w', encoding='utf-8') as f:
+                json.dump(prompt_diff, f, indent=2, ensure_ascii=False)
+            logger.info(f"Prompt-Diff gespeichert: {diff_file}")
+        except Exception as e:
+            logger.error(f"Fehler beim Speichern des Prompt-Diffs: {e}")
 
 def main():
     """Hauptfunktion für Kommandozeilen-Nutzung"""

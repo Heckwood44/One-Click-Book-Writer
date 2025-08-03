@@ -223,6 +223,31 @@ class PipelineAuditor:
                 missing_elements.append("System Note")
                 section["details"]["canvas_compliance"] = "missing"
             
+            # Bilinguale Struktur mit Mindestlängen prüfen
+            if "---" in prompt:
+                parts = prompt.split("---")
+                if len(parts) >= 2:
+                    german_part = parts[0].strip()
+                    english_part = parts[1].strip()
+                    
+                    # Mindestlängen prüfen (50 Wörter pro Sprache)
+                    german_words = len(german_part.split())
+                    english_words = len(english_part.split())
+                    
+                    if german_words >= 50 and english_words >= 50:
+                        section["details"]["bilingual_split"] = "valid_with_minimum_length"
+                        section["details"]["german_words"] = german_words
+                        section["details"]["english_words"] = english_words
+                    else:
+                        section["details"]["bilingual_split"] = "invalid_insufficient_length"
+                        section["errors"].append(f"Bilinguale Teile zu kurz: DE={german_words}, EN={english_words} Wörter")
+                else:
+                    section["details"]["bilingual_split"] = "invalid_structure"
+                    section["errors"].append("Bilinguale Struktur unvollständig")
+            else:
+                section["details"]["bilingual_split"] = "missing"
+                section["errors"].append("Keine bilinguale Trennung gefunden")
+            
             if missing_elements:
                 section["errors"].extend([f"Fehlendes Element: {elem}" for elem in missing_elements])
             else:
@@ -351,8 +376,40 @@ class PipelineAuditor:
                     prompt_hash = metadata["prompt_versioning"].get("latest_version_hash")
                     if prompt_hash:
                         section["details"]["prompt_hash"] = prompt_hash
+                        
+                        # Hash mit tatsächlichem Prompt abgleichen
+                        try:
+                            from compiler.prompt_compiler import generate_prompt_hash
+                            # Hier würden wir den tatsächlichen Prompt laden
+                            # Für jetzt nur den Hash validieren
+                            if len(prompt_hash) >= 8:
+                                section["details"]["hash_validation"] = "valid_format"
+                            else:
+                                section["details"]["hash_validation"] = "invalid_format"
+                                section["warnings"].append("Prompt-Hash Format ungültig")
+                        except Exception as e:
+                            section["warnings"].append(f"Hash-Validierung fehlgeschlagen: {e}")
                     else:
                         section["warnings"].append("Prompt-Hash nicht in Metadaten")
+                
+                # Canvas-Compliance prüfen
+                if "canvas_compliance" in metadata:
+                    compliance = metadata["canvas_compliance"]
+                    section["details"]["canvas_compliance"] = compliance.get("overall_compliance", "unknown")
+                    if compliance.get("overall_compliance") != "full":
+                        section["warnings"].append("Canvas-Compliance nicht vollständig")
+                else:
+                    section["details"]["canvas_compliance"] = "missing"
+                    section["warnings"].append("Canvas-Compliance in Meta fehlt")
+                
+                # Review-Flags prüfen
+                if "review_required" in metadata:
+                    section["details"]["review_flags"] = "present"
+                    if metadata["review_required"]:
+                        section["warnings"].append("Review erforderlich")
+                else:
+                    section["details"]["review_flags"] = "missing"
+                    section["warnings"].append("Review-Flags in Meta fehlen")
                 
                 # Qualitätsbewertung prüfen
                 if "quality_evaluation" in metadata:

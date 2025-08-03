@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-03T01:46:25.321958",
+  "timestamp": "2025-08-03T02:06:16.623373",
   "audit_version": "2.0.0",
   "sections": {
     "environment": {
@@ -32,6 +32,9 @@
         "prompt_hash": "998fa1af57e8a3cd",
         "system_note": "present_with_signature",
         "canvas_compliance": "full",
+        "bilingual_split": "valid_with_minimum_length",
+        "german_words": 257,
+        "english_words": 217,
         "prompt_elements": "complete",
         "bilingual_format": "correct"
       },
@@ -42,102 +45,35 @@
       "status": "passed",
       "details": {
         "generation": "successful",
-        "quality_score": 0.475,
-        "german_file": "present (4834 bytes)",
-        "english_file": "present (2283 bytes)",
-        "bilingual_file": "present (7144 bytes)",
-        "metadata_file": "present (4893 bytes)",
+        "quality_score": 0.613,
+        "german_file": "present (64 bytes)",
+        "english_file": "present (64 bytes)",
+        "bilingual_file": "present (155 bytes)",
+        "metadata_file": "present (13776 bytes)",
         "bilingual_separation": "successful"
       },
       "errors": [],
       "warnings": []
     },
     "output_metadata": {
-      "status": "passed",
+      "status": "partial",
       "details": {
         "metadata_file": "present",
         "metadata_structure": "complete",
         "prompt_hash": "998fa1af57e8a3cd",
+        "hash_validation": "valid_format",
+        "canvas_compliance": "full",
+        "review_flags": "present",
         "quality_evaluation": "complete"
       },
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Review erforderlich"
+      ],
       "quality_metrics": {
         "german_evaluation": {
-          "overall_score": 0.638,
-          "quality_level": "Good",
-          "review_required": true,
-          "critical_issues": false,
-          "flags": [
-            "EMOTION_PROBLEM",
-            "STRUCTURE_PROBLEM"
-          ],
-          "weights": {
-            "word_limit_compliance": 0.25,
-            "core_emotion_presence": 0.2,
-            "repetition_penalty": 0.15,
-            "readability": 0.2,
-            "structure_quality": 0.2
-          },
-          "individual_scores": {
-            "word_limit_compliance": {
-              "score": 0.973,
-              "details": {
-                "actual_words": 789,
-                "target_words": 800,
-                "deviation_percent": 1.38,
-                "score": 0.973
-              }
-            },
-            "core_emotion_presence": {
-              "score": 0.0,
-              "details": {
-                "target_emotion": "wonder",
-                "emotion_count": 0,
-                "total_words": 789,
-                "emotion_ratio": 0.0,
-                "optimal_ratio": 2.0,
-                "score": 0.0
-              }
-            },
-            "repetition_penalty": {
-              "score": 0.833,
-              "details": {
-                "unique_words": 493,
-                "total_words": 789,
-                "repetition_ratio": 37.52,
-                "optimal_repetition": 25.0,
-                "score": 0.833
-              }
-            },
-            "readability": {
-              "score": 1.0,
-              "details": {
-                "target_audience": "Kinder im Alter von 6-10 Jahren",
-                "avg_sentence_length": 10.27,
-                "sentence_count": 78,
-                "score": 1.0
-              }
-            },
-            "structure_quality": {
-              "score": 0.35,
-              "details": {
-                "paragraph_count": 33,
-                "avg_paragraph_length": 23.91,
-                "length_score": 0.4,
-                "count_score": 0.3,
-                "structure_score": 0.35
-              }
-            }
-          },
-          "improvement_suggestions": [
-            "Kernemotion stärker hervorheben",
-            "Absatzstruktur verbessern"
-          ]
-        },
-        "english_evaluation": {
-          "overall_score": 0.364,
-          "quality_level": "Poor",
+          "overall_score": 0.42,
+          "quality_level": "Fair",
           "review_required": true,
           "critical_issues": true,
           "flags": [
@@ -156,9 +92,9 @@
             "word_limit_compliance": {
               "score": 0.0,
               "details": {
-                "actual_words": 357,
+                "actual_words": 7,
                 "target_words": 800,
-                "deviation_percent": 55.38,
+                "deviation_percent": 99.12,
                 "score": 0.0
               }
             },
@@ -167,39 +103,36 @@
               "details": {
                 "target_emotion": "wonder",
                 "emotion_count": 0,
-                "total_words": 357,
+                "total_words": 7,
                 "emotion_ratio": 0.0,
                 "optimal_ratio": 2.0,
                 "score": 0.0
               }
             },
             "repetition_penalty": {
-              "score": 0.896,
+              "score": 1.0,
               "details": {
-                "unique_words": 240,
-                "total_words": 357,
-                "repetition_ratio": 32.77,
-                "optimal_repetition": 25.0,
-                "score": 0.896
+                "repetition_score": 1.0,
+                "reason": "Text zu kurz"
               }
             },
             "readability": {
               "score": 0.8,
               "details": {
                 "target_audience": "Kinder im Alter von 6-10 Jahren",
-                "avg_sentence_length": 9.81,
-                "sentence_count": 37,
+                "avg_sentence_length": 7.0,
+                "sentence_count": 1,
                 "score": 0.8
               }
             },
             "structure_quality": {
-              "score": 0.35,
+              "score": 0.55,
               "details": {
-                "paragraph_count": 13,
-                "avg_paragraph_length": 27.46,
+                "paragraph_count": 1,
+                "avg_paragraph_length": 7.0,
                 "length_score": 0.4,
-                "count_score": 0.3,
-                "structure_score": 0.35
+                "count_score": 0.7,
+                "structure_score": 0.55
               }
             }
           },
@@ -209,24 +142,96 @@
             "Absatzstruktur verbessern"
           ]
         },
-        "consistency_score": 0.423,
-        "overall_bilingual_score": 0.475
+        "english_evaluation": {
+          "overall_score": 0.42,
+          "quality_level": "Fair",
+          "review_required": true,
+          "critical_issues": true,
+          "flags": [
+            "WORTLIMIT_PROBLEM",
+            "EMOTION_PROBLEM",
+            "STRUCTURE_PROBLEM"
+          ],
+          "weights": {
+            "word_limit_compliance": 0.25,
+            "core_emotion_presence": 0.2,
+            "repetition_penalty": 0.15,
+            "readability": 0.2,
+            "structure_quality": 0.2
+          },
+          "individual_scores": {
+            "word_limit_compliance": {
+              "score": 0.0,
+              "details": {
+                "actual_words": 7,
+                "target_words": 800,
+                "deviation_percent": 99.12,
+                "score": 0.0
+              }
+            },
+            "core_emotion_presence": {
+              "score": 0.0,
+              "details": {
+                "target_emotion": "wonder",
+                "emotion_count": 0,
+                "total_words": 7,
+                "emotion_ratio": 0.0,
+                "optimal_ratio": 2.0,
+                "score": 0.0
+              }
+            },
+            "repetition_penalty": {
+              "score": 1.0,
+              "details": {
+                "repetition_score": 1.0,
+                "reason": "Text zu kurz"
+              }
+            },
+            "readability": {
+              "score": 0.8,
+              "details": {
+                "target_audience": "Kinder im Alter von 6-10 Jahren",
+                "avg_sentence_length": 7.0,
+                "sentence_count": 1,
+                "score": 0.8
+              }
+            },
+            "structure_quality": {
+              "score": 0.55,
+              "details": {
+                "paragraph_count": 1,
+                "avg_paragraph_length": 7.0,
+                "length_score": 0.4,
+                "count_score": 0.7,
+                "structure_score": 0.55
+              }
+            }
+          },
+          "improvement_suggestions": [
+            "Wortanzahl anpassen - Ziel besser einhalten",
+            "Kernemotion stärker hervorheben",
+            "Absatzstruktur verbessern"
+          ]
+        },
+        "consistency_score": 1.0,
+        "overall_bilingual_score": 0.613
       }
     },
     "quality_evaluation": {
       "status": "partial",
       "details": {
-        "german_score": 0.638,
-        "german_level": "Good",
-        "english_score": 0.364,
-        "english_level": "Poor",
-        "overall_score": 0.501,
+        "german_score": 0.42,
+        "german_level": "Fair",
+        "english_score": 0.42,
+        "english_level": "Fair",
+        "overall_score": 0.42,
         "review_required": true
       },
       "errors": [],
       "warnings": [
-        "Englische Qualität kritisch: 0.364",
-        "Gesamtqualität unter Schwellenwert: 0.501",
+        "Deutsche Qualität kritisch: 0.42",
+        "Englische Qualität kritisch: 0.42",
+        "Gesamtqualität unter Schwellenwert: 0.42",
         "Manuelle Review erforderlich"
       ]
     },
@@ -253,19 +258,21 @@
   },
   "summary": {
     "total_sections": 8,
-    "passed_sections": 7,
+    "passed_sections": 6,
     "failed_sections": 0,
-    "partial_sections": 1,
-    "success_rate": 87.5,
+    "partial_sections": 2,
+    "success_rate": 75.0,
     "total_errors": 0,
-    "total_warnings": 3,
+    "total_warnings": 5,
     "total_fallbacks": 0,
     "overall_status": "passed"
   },
   "errors": [],
   "warnings": [
-    "quality_evaluation: Englische Qualität kritisch: 0.364",
-    "quality_evaluation: Gesamtqualität unter Schwellenwert: 0.501",
+    "output_metadata: Review erforderlich",
+    "quality_evaluation: Deutsche Qualität kritisch: 0.42",
+    "quality_evaluation: Englische Qualität kritisch: 0.42",
+    "quality_evaluation: Gesamtqualität unter Schwellenwert: 0.42",
     "quality_evaluation: Manuelle Review erforderlich"
   ],
   "fallbacks_applied": [],

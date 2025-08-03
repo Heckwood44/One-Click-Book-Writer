@@ -249,6 +249,56 @@
       "output_tokens": 413,
       "total_tokens": 590,
       "cost_usd": 0.030089999999999995
+    },
+    {
+      "timestamp": "2025-08-03T01:48:49.448416",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 168,
+      "output_tokens": 392,
+      "total_tokens": 560,
+      "cost_usd": 0.02856
+    },
+    {
+      "timestamp": "2025-08-03T02:04:11.872139",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 204,
+      "output_tokens": 475,
+      "total_tokens": 679,
+      "cost_usd": 0.03462
+    },
+    {
+      "timestamp": "2025-08-03T02:05:38.600251",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 186,
+      "output_tokens": 436,
+      "total_tokens": 622,
+      "cost_usd": 0.03174
+    },
+    {
+      "timestamp": "2025-08-03T02:07:03.911942",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 253,
+      "output_tokens": 591,
+      "total_tokens": 844,
+      "cost_usd": 0.04305
+    },
+    {
+      "timestamp": "2025-08-03T02:07:46.197087",
+      "provider": "openai",
+      "model": "gpt-4",
+      "call_type": "chapter_generation",
+      "input_tokens": 221,
+      "output_tokens": 516,
+      "total_tokens": 737,
+      "cost_usd": 0.03759
     }
   ],
   "summary": {}

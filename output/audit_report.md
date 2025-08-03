@@ -1,15 +1,15 @@
 # One Click Book Writer - Pipeline Audit Report
 
-**Datum:** 2025-08-03T01:46:25.321958
+**Datum:** 2025-08-03T02:06:16.623373
 **Audit-Version:** 2.0.0
 
 ## Zusammenfassung
 
 - **Gesamtstatus:** PASSED
-- **Erfolgsrate:** 87.5%
-- **Bestanden:** 7/8
+- **Erfolgsrate:** 75.0%
+- **Bestanden:** 6/8
 - **Fehler:** 0
-- **Warnungen:** 3
+- **Warnungen:** 5
 
 ## Detaillierte Ergebnisse
 
@@ -26,13 +26,16 @@
 - **Status:** PASSED
 
 ### OUTPUT_METADATA
-- **Status:** PASSED
+- **Status:** PARTIAL
+- **Warnungen:**
+  - Review erforderlich
 
 ### QUALITY_EVALUATION
 - **Status:** PARTIAL
 - **Warnungen:**
-  - Englische Qualität kritisch: 0.364
-  - Gesamtqualität unter Schwellenwert: 0.501
+  - Deutsche Qualität kritisch: 0.42
+  - Englische Qualität kritisch: 0.42
+  - Gesamtqualität unter Schwellenwert: 0.42
   - Manuelle Review erforderlich
 
 ### TESTING_CI
