@@ -56,11 +56,26 @@ Ein fortschrittliches Framework für die automatisierte Generierung von Kinderb�
 git clone https://github.com/your-repo/one-click-book-writer.git
 cd one-click-book-writer
 
+# Virtual Environment erstellen
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# oder: .venv\Scripts\activate  # Windows
+
 # Dependencies installieren
 pip install -r requirements.txt
 
 # Tests ausführen
 python -m pytest tests/ -v --cov=core --cov-report=html
+```
+
+## 🚀 Schnellstart
+
+```bash
+# GUI starten
+python gui_enhanced.py
+
+# Oder mit Universal-Start-Script (von überall ausführbar)
+/Users/tonyhegewald/Entwicklung/start_book_writer.sh
 ```
 
 ## 🧪 Testing

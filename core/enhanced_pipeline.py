@@ -247,7 +247,38 @@ class EnhancedPipeline(ComponentInterface):
     def _parse_bilingual_response(self, response: str) -> Tuple[str, str]:
         """Parst bilinguale Antwort"""
         try:
-            if "---" in response:
+            # Verschiedene Formate unterstützen
+            response_lower = response.lower()
+            
+            # Format: DEUTSCH: ... ENGLISH: ...
+            if "deutsch:" in response_lower and "english:" in response_lower:
+                parts = response.split("ENGLISH:", 1)
+                if len(parts) >= 2:
+                    german_part = parts[0].split("DEUTSCH:", 1)[1] if "DEUTSCH:" in parts[0] else parts[0]
+                    german_text = german_part.strip()
+                    english_text = parts[1].strip()
+                    return german_text, english_text
+            
+            # Format: German: ... English: ...
+            elif "german:" in response_lower and "english:" in response_lower:
+                parts = response.split("English:", 1)
+                if len(parts) >= 2:
+                    german_part = parts[0].split("German:", 1)[1] if "German:" in parts[0] else parts[0]
+                    german_text = german_part.strip()
+                    english_text = parts[1].strip()
+                    return german_text, english_text
+            
+            # Format: 🇩🇪 ... 🇺🇸 ...
+            elif "🇩🇪" in response and "🇺🇸" in response:
+                parts = response.split("🇺🇸", 1)
+                if len(parts) >= 2:
+                    german_part = parts[0].split("🇩🇪", 1)[1] if "🇩🇪" in parts[0] else parts[0]
+                    german_text = german_part.strip()
+                    english_text = parts[1].strip()
+                    return german_text, english_text
+            
+            # Format: --- Trenner
+            elif "---" in response:
                 parts = response.split("---")
                 if len(parts) >= 2:
                     german_text = parts[0].strip()
