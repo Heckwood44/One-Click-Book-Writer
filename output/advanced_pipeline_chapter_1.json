@@ -1,0 +1,351 @@
+{
+  "cycle_timestamp": "2025-08-03T02:56:33.454331",
+  "template_id": "children_book_v1",
+  "chapter_number": 1,
+  "calibration_results": {
+    "error": "Template children_book_v1 nicht gefunden"
+  },
+  "generation_results": {
+    "success": true,
+    "attempt": 1,
+    "german_text": "Titel: Der Zauberwald der Wünsche\n\nAn einem sonnigen Morgen, als die Vögel fröhlich ihre Lieder zwitscherten, machte sich ein kleines Mädchen namens Lina auf den Weg, ein großes Abenteuer zu erleben. Lina war ein mutiges Mädchen mit leuchtend roten Haaren und einem Herzen voller Träume. Ihr Ziel war der Zauberwald der Wünsche, von dem ihr Großvater so oft erzählt hatte. In diesem Wald, so sagte er, könnten die reinsten Herzenswünsche in Erfüllung gehen.\n\nLina packte ihren kleinen Rucksack mit einem Apfel, einem Stück Kuchen und einer Flasche Wasser. Sie schlüpfte in ihre Lieblingsschuhe und setzte ihren breitkrempigen Hut auf, unter dem ihre Locken hervorblitzten. Mit einem Lächeln auf den Lippen verließ sie das Haus und folgte dem schmalen Pfad, der zum Zauberwald führte.\n\nAls sie den Wald erreichte, begrüßten sie die Bäume mit einem sanften Rascheln ihrer Blätter. Der Wald war voller Leben und Magie. Schmetterlinge in allen Farben des Regenbogens tanzten in der Luft, und die Blumen sangen leise Lieder, die nur das Herz verstehen konnte.\n\nLina staunte nicht schlecht, als ein kleines Eichhörnchen auf sie zukam. Es trug ein winziges grünes Mützchen und hatte leuchtende, neugierige Augen. \"Hallo, Lina\", sagte das Eichhörnchen mit einer piepsigen Stimme. \"Ich bin Filou, der Hüter des Zauberwaldes. Ich weiß, dass du einen Herzenswunsch hast. Folge mir, und ich werde dir den Weg zeigen.\"\n\nGemeinsam machten sie sich auf den Weg. Filou führte Lina durch den Wald, vorbei an plätschernden Bächen und duftenden Blumenwiesen. Schließlich kamen sie an einer Lichtung an, in deren Mitte ein alter, weiser Baum stand. Seine Äste reichten weit in den Himmel, und seine Wurzeln schienen tief in die Erde zu greifen.\n\n\"Dies ist der Baum der Wünsche\", erklärte Filou. \"Um deinen Wunsch zu erfüllen, musst du dem Baum ein Geschenk machen. Etwas, das von Herzen kommt.\"\n\nLina dachte nach. Was konnte sie einem Baum schon geben? Da erinnerte sie sich an den Kuchen in ihrem Rucksack. Sie nahm das Stück Kuchen heraus und legte es respektvoll zu den Wurzeln des Baumes. \"Ich wünsche mir\", sagte Lina mit geschlossenen Augen, \"dass ich die Kraft habe, meinen Freunden und meiner Familie immer beizustehen und ihnen Freude zu bringen.\"\n\nKaum hatte sie ihre Worte ausgesprochen, da leuchtete der Baum in einem warmen Licht auf. Ein sanfter Wind erhob sich, und Lina spürte, wie eine warme Welle der Liebe und des Mutes durch sie hindurchströmte. Als das Licht wieder erlosch, stand ein kleiner, leuchtender Kristall vor ihr.\n\n\"Dies ist der Kristall der Freundschaft\", sagte Filou. \"Er wird dir helfen, deinen Wunsch zu erfüllen. Bewahre ihn immer bei dir.\"\n\nLina bedankte sich bei Filou und dem Baum der Wünsche. Mit einem Herzen voller Freude und dem Kristall sicher in ihrer Tasche machte sie sich auf den Heimweg. Sie wusste jetzt, dass wahre Magie darin lag, anderen Gutes zu tun und für sie da zu sein.\n\nAls Lina nach Hause kam, erzählte sie ihrer Familie von ihrem Abenteuer. Sie teilte den Kristall der Freundschaft mit ihren Freunden und entdeckte, dass sie durch kleine Taten der Freundlichkeit und des Mutes die Welt um sie herum ein wenig heller machen konnte.\n\nUnd so lebte Lina ihr Leben, immer darauf bedacht, Freude und Hoffnung zu verbreiten, unterstützt von der Magie des Zauberwaldes der Wünsche.\n\nEnde",
+    "english_text": "",
+    "prompt_hash": "d5ffd10afbe83c0a",
+    "quality_metrics": {
+      "overall_score": 0.509,
+      "quality_level": "Fair",
+      "review_required": true,
+      "critical_issues": false,
+      "flags": [
+        "WORTLIMIT_PROBLEM",
+        "EMOTION_PROBLEM",
+        "STRUCTURE_PROBLEM"
+      ],
+      "weights": {
+        "word_limit_compliance": 0.25,
+        "core_emotion_presence": 0.2,
+        "repetition_penalty": 0.15,
+        "readability": 0.2,
+        "structure_quality": 0.2
+      },
+      "individual_scores": {
+        "word_limit_compliance": {
+          "score": 0.345,
+          "details": {
+            "actual_words": 538,
+            "target_words": 800,
+            "deviation_percent": 32.75,
+            "score": 0.345
+          }
+        },
+        "core_emotion_presence": {
+          "score": 0.0,
+          "details": {
+            "target_emotion": "wonder",
+            "emotion_count": 0,
+            "total_words": 538,
+            "emotion_ratio": 0.0,
+            "optimal_ratio": 2.0,
+            "score": 0.0
+          }
+        },
+        "repetition_penalty": {
+          "score": 0.751,
+          "details": {
+            "unique_words": 303,
+            "total_words": 538,
+            "repetition_ratio": 43.68,
+            "optimal_repetition": 25.0,
+            "score": 0.751
+          }
+        },
+        "readability": {
+          "score": 1.0,
+          "details": {
+            "target_audience": "children",
+            "avg_sentence_length": 13.22,
+            "sentence_count": 41,
+            "score": 1.0
+          }
+        },
+        "structure_quality": {
+          "score": 0.55,
+          "details": {
+            "paragraph_count": 14,
+            "avg_paragraph_length": 38.43,
+            "length_score": 0.8,
+            "count_score": 0.3,
+            "structure_score": 0.55
+          }
+        }
+      },
+      "improvement_suggestions": [
+        "Wortanzahl anpassen - Ziel besser einhalten",
+        "Kernemotion stärker hervorheben",
+        "Absatzstruktur verbessern"
+      ]
+    },
+    "constraint_results": {
+      "violations": [],
+      "issues": [
+        {
+          "issue_type": "word_count",
+          "severity": "medium",
+          "description": "Text zu kurz: 538 Wörter (Minimum: 600)",
+          "current_value": 538,
+          "target_value": 600,
+          "deviation_percent": 10.333333333333334
+        },
+        {
+          "issue_type": "emotional_content",
+          "severity": "high",
+          "description": "Zu wenig emotionale Tiefe: 0.013 (Minimum: 0.020)",
+          "current_value": 0.013011152416356878,
+          "target_value": 0.02,
+          "deviation_percent": 34.94423791821561
+        }
+      ],
+      "retry_attempts": 1,
+      "final_retry_necessary": false
+    },
+    "word_count": 538,
+    "generation_timestamp": "2025-08-03T02:56:58.627562"
+  },
+  "feedback_results": {
+    "feedback_collected": true,
+    "feedback_entries": [],
+    "feedback_summary": {
+      "summary_timestamp": "2025-08-03T02:56:58.628581",
+      "total_feedback_entries": 5,
+      "overall_statistics": {
+        "total_entries": 5,
+        "avg_rating": 3.4,
+        "avg_quality_score": 0.5922,
+        "rating_std": 0.5477225575051661,
+        "quality_std": 0.046510213931995614
+      },
+      "correlation_analysis": {
+        "correlation_quality_vs_rating": 0.408248290463863,
+        "correlation_interpretation": "Mittlere Korrelation",
+        "top_divergences": [
+          {
+            "entry_id": 0,
+            "prompt_hash": "998fa1af57e8a3cd",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 4,
+            "divergence": 0.137,
+            "comment": "Gute Grundstruktur, aber könnte mehr emotionale Tiefe haben"
+          },
+          {
+            "entry_id": 2,
+            "prompt_hash": "2fc47a0ccbcd3210",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 4,
+            "divergence": 0.137,
+            "comment": "Sehr gute emotionale Tiefe und bildhafte Sprache"
+          },
+          {
+            "entry_id": 1,
+            "prompt_hash": "998fa1af57e8a3cd",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 3,
+            "divergence": 0.11299999999999999,
+            "comment": "Solid foundation, needs more engaging dialogue"
+          },
+          {
+            "entry_id": 3,
+            "prompt_hash": "2fc47a0ccbcd3210",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 3,
+            "divergence": 0.11299999999999999,
+            "comment": "Much better emotional engagement and dialogue"
+          },
+          {
+            "entry_id": 4,
+            "prompt_hash": "d5ffd10afbe83c0a",
+            "chapter_number": 1,
+            "quality_score": 0.509,
+            "user_rating": 3,
+            "divergence": 0.009000000000000008,
+            "comment": "Durchschnittliche Qualität, Verbesserungspotential vorhanden"
+          }
+        ],
+        "analysis_timestamp": "2025-08-03T02:56:58.628571"
+      },
+      "best_performing_prompts": [
+        {
+          "prompt_hash": "998fa1af57e8a3cd",
+          "entry_count": 2,
+          "avg_rating": 3.5,
+          "avg_quality_score": 0.613,
+          "combined_score": 2.3452,
+          "rating_std": 0.7071067811865476,
+          "quality_std": 0.0
+        },
+        {
+          "prompt_hash": "2fc47a0ccbcd3210",
+          "entry_count": 2,
+          "avg_rating": 3.5,
+          "avg_quality_score": 0.613,
+          "combined_score": 2.3452,
+          "rating_std": 0.7071067811865476,
+          "quality_std": 0.0
+        }
+      ],
+      "recommendations": [
+        "Beste Prompt-Variante: 998fa1af57e8a3cd (Score: 2.35)",
+        "Größte Divergenz: Kapitel 1 (Quality: 0.61, Rating: 4/5)"
+      ]
+    },
+    "simulated_rating": 3,
+    "quality_correlation": 0.408248290463863
+  },
+  "health_report": {
+    "report_timestamp": "2025-08-03T02:56:58.628614",
+    "template_health": {
+      "status": "no_templates",
+      "message": "Keine Templates verfügbar"
+    },
+    "performance_metrics": {
+      "status": "no_data",
+      "message": "Keine Performance-Daten verfügbar"
+    },
+    "feedback_analysis": {
+      "total_feedback_entries": 4,
+      "rating_distribution": {
+        "4": 2,
+        "3": 2
+      },
+      "correlation_analysis": {
+        "correlation_quality_vs_rating": 0,
+        "correlation_interpretation": "Keine nennenswerte Korrelation",
+        "top_divergences": [
+          {
+            "entry_id": 0,
+            "prompt_hash": "998fa1af57e8a3cd",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 4,
+            "divergence": 0.137,
+            "comment": "Gute Grundstruktur, aber könnte mehr emotionale Tiefe haben"
+          },
+          {
+            "entry_id": 2,
+            "prompt_hash": "2fc47a0ccbcd3210",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 4,
+            "divergence": 0.137,
+            "comment": "Sehr gute emotionale Tiefe und bildhafte Sprache"
+          },
+          {
+            "entry_id": 1,
+            "prompt_hash": "998fa1af57e8a3cd",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 3,
+            "divergence": 0.11299999999999999,
+            "comment": "Solid foundation, needs more engaging dialogue"
+          },
+          {
+            "entry_id": 3,
+            "prompt_hash": "2fc47a0ccbcd3210",
+            "chapter_number": 1,
+            "quality_score": 0.613,
+            "user_rating": 3,
+            "divergence": 0.11299999999999999,
+            "comment": "Much better emotional engagement and dialogue"
+          }
+        ],
+        "analysis_timestamp": "2025-08-03T02:56:58.628655"
+      },
+      "feedback_trends": [
+        {
+          "timestamp": "2025-08-03T02:49:21.595402",
+          "rating": 4,
+          "quality_score": 0.613,
+          "prompt_hash": "998fa1af57e8a3cd"
+        },
+        {
+          "timestamp": "2025-08-03T02:49:21.596033",
+          "rating": 3,
+          "quality_score": 0.613,
+          "prompt_hash": "998fa1af57e8a3cd"
+        },
+        {
+          "timestamp": "2025-08-03T02:49:21.596451",
+          "rating": 4,
+          "quality_score": 0.613,
+          "prompt_hash": "2fc47a0ccbcd3210"
+        },
+        {
+          "timestamp": "2025-08-03T02:49:21.596837",
+          "rating": 3,
+          "quality_score": 0.613,
+          "prompt_hash": "2fc47a0ccbcd3210"
+        }
+      ],
+      "prompt_performance_correlation": {
+        "998fa1af57e8a3cd": {
+          "avg_rating": 3.5,
+          "avg_quality_score": 0.613,
+          "correlation_delta": 0.43500000000000005
+        },
+        "2fc47a0ccbcd3210": {
+          "avg_rating": 3.5,
+          "avg_quality_score": 0.613,
+          "correlation_delta": 0.43500000000000005
+        }
+      }
+    },
+    "diversity_metrics": {
+      "status": "no_templates",
+      "message": "Keine Templates für Diversity-Analyse"
+    },
+    "cost_analysis": {
+      "estimated_tokens_used": 0,
+      "estimated_cost_per_chapter": 0.0,
+      "cost_trends": [],
+      "optimization_cost_benefit": {}
+    },
+    "recommendations": [
+      "Mehr aktive Templates erstellen - Diversität erhöhen",
+      "Qualitäts-Scores verbessern - Template-Optimierung erforderlich",
+      "Quality-Evaluator anpassen - Korrelation mit Nutzer-Ratings verbessern",
+      "Lexical Variety erhöhen - Prompt-Variation verstärken"
+    ],
+    "overall_health_score": 0.03333333333333333
+  },
+  "summary": {
+    "pipeline_success": true,
+    "template_performance": {
+      "template_hash": "d5ffd10afbe83c0a",
+      "retry_attempts": 1,
+      "word_count": 538,
+      "generation_success": true
+    },
+    "quality_metrics": {
+      "overall_score": 0.509,
+      "quality_level": "Fair",
+      "review_required": true
+    },
+    "feedback_insights": {
+      "feedback_collected": true,
+      "simulated_rating": 3,
+      "quality_correlation": 0.408248290463863
+    },
+    "health_indicators": {
+      "overall_health_score": 0.03333333333333333,
+      "template_count": 0,
+      "active_templates": 0
+    },
+    "recommendations": [
+      "Template-Optimierung erforderlich - Qualitäts-Score zu niedrig",
+      "System-Gesundheit verbessern - Mehr Templates und bessere Performance"
+    ]
+  }
+}

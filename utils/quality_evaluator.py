@@ -217,6 +217,41 @@ class QualityEvaluator:
             "structure_score": round(structure_score, 3)
         }
     
+    def evaluate_text(self, text: str, language: str = "de", target_words: int = 800) -> Dict:
+        """
+        Einfache evaluate_text Methode für Kompatibilität - Fallback-Implementierung
+        
+        Args:
+            text: Text to evaluate
+            language: Language code ('de' or 'en')
+            target_words: Target word count
+            
+        Returns:
+            Evaluation result with fallback quality_score
+        """
+        try:
+            # Verwende die vollständige Evaluation wenn möglich
+            return self.calculate_overall_quality_score(
+                text=text,
+                target_words=target_words,
+                target_emotion="wonder",  # Default emotion
+                target_audience="children",
+                language=language
+            )
+        except Exception as e:
+            logger.error(f"Fehler bei evaluate_text: {e}")
+            # Fallback mit erklärtem Reason-Code
+            return {
+                "overall_score": 0.0,
+                "quality_level": "Poor",
+                "review_required": True,
+                "critical_issues": True,
+                "flags": ["EVALUATOR_ERROR"],
+                "reason": f"Evaluator missing component: {e}",
+                "individual_scores": {},
+                "improvement_suggestions": ["QualityEvaluator-System überprüfen"]
+            }
+
     def calculate_overall_quality_score(self, 
                                       text: str, 
                                       target_words: int,

@@ -1,0 +1,62 @@
+{
+  "preschool": {
+    "name": "Vorschule (3-5 Jahre)",
+    "reading_level": "beginner",
+    "vocabulary_complexity": "simple",
+    "sentence_structure": "short",
+    "tone": "gentle",
+    "word_count_range": [50, 150],
+    "sentence_length_range": [5, 15],
+    "emotional_depth": "basic",
+    "dialogue_ratio": 0.3,
+    "description": "Einfache, bildhafte Geschichten mit kurzen Sätzen und grundlegenden Emotionen"
+  },
+  "early_reader": {
+    "name": "Früher Leser (6-8 Jahre)",
+    "reading_level": "early",
+    "vocabulary_complexity": "basic",
+    "sentence_structure": "simple",
+    "tone": "encouraging",
+    "word_count_range": [150, 300],
+    "sentence_length_range": [8, 20],
+    "emotional_depth": "moderate",
+    "dialogue_ratio": 0.4,
+    "description": "Ermutigende Geschichten mit einfacher Sprache und positiven Botschaften"
+  },
+  "middle_grade": {
+    "name": "Mittlere Stufe (9-12 Jahre)",
+    "reading_level": "intermediate",
+    "vocabulary_complexity": "moderate",
+    "sentence_structure": "varied",
+    "tone": "engaging",
+    "word_count_range": [300, 600],
+    "sentence_length_range": [10, 25],
+    "emotional_depth": "developed",
+    "dialogue_ratio": 0.5,
+    "description": "Fesselnde Geschichten mit entwickelten Charakteren und komplexeren Handlungen"
+  },
+  "young_adult": {
+    "name": "Junge Erwachsene (13-17 Jahre)",
+    "reading_level": "advanced",
+    "vocabulary_complexity": "rich",
+    "sentence_structure": "complex",
+    "tone": "authentic",
+    "word_count_range": [600, 1200],
+    "sentence_length_range": [15, 35],
+    "emotional_depth": "deep",
+    "dialogue_ratio": 0.6,
+    "description": "Authentische Geschichten mit tiefen Emotionen und komplexen Themen"
+  },
+  "adult": {
+    "name": "Erwachsene (18+ Jahre)",
+    "reading_level": "expert",
+    "vocabulary_complexity": "sophisticated",
+    "sentence_structure": "advanced",
+    "tone": "mature",
+    "word_count_range": [800, 2000],
+    "sentence_length_range": [20, 50],
+    "emotional_depth": "profound",
+    "dialogue_ratio": 0.7,
+    "description": "Reife Geschichten mit anspruchsvoller Sprache und tiefgründigen Themen"
+  }
+} 

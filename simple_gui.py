@@ -3,9 +3,14 @@ from tkinter import ttk, scrolledtext, filedialog, messagebox
 import json
 import os
 import sys
+import logging
 import openai
 import anthropic
 from dotenv import load_dotenv
+
+# Setup Logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 # Lade Umgebungsvariablen
 load_dotenv()
@@ -48,17 +53,20 @@ class SimpleBookWriterGUI:
             try:
                 # Verwende nur die notwendigen Parameter für die neueste Anthropic Version
                 self.claude_client = anthropic.Anthropic(api_key=self.anthropic_api_key)
-                print("Claude Client erfolgreich initialisiert")
-            except Exception as e:
-                print(f"Claude Client Initialisierung fehlgeschlagen: {e}")
+                logger.info("Claude Client erfolgreich initialisiert")
+            except (ValueError, TypeError, ImportError) as e:
+                logger.error(f"Claude Client Initialisierung fehlgeschlagen (Parameter/Import): {e}")
                 # Fallback: Versuche es ohne zusätzliche Parameter
                 try:
                     self.claude_client = anthropic.Anthropic()
                     self.claude_client.api_key = self.anthropic_api_key
-                    print("Claude Client erfolgreich initialisiert (Fallback)")
+                    logger.info("Claude Client erfolgreich initialisiert (Fallback)")
                 except Exception as e2:
-                    print(f"Claude Client Fallback fehlgeschlagen: {e2}")
+                    logger.error(f"Claude Client Fallback fehlgeschlagen: {e2}")
                     self.claude_client = None
+            except Exception as e:
+                logger.exception(f"Unerwarteter Fehler bei Claude Client Initialisierung: {e}")
+                self.claude_client = None
         
         # Beispiel-JSON laden (kompatibel mit neuer bilingualer Struktur)
         self.example_data = {
@@ -419,8 +427,12 @@ Gib strukturierte, praktische Vorschläge, die sofort umsetzbar sind."""
             self.story_results_text.delete(1.0, tk.END)
             self.story_results_text.insert(1.0, result)
             
-        except Exception as e:
+        except (ValueError, AttributeError) as e:
+            logger.error(f"Fehler bei der Story-Analyse (Daten/Attribut): {e}")
             messagebox.showerror("Fehler", f"Fehler bei der Story-Analyse: {e}")
+        except Exception as e:
+            logger.exception(f"Unerwarteter Fehler bei der Story-Analyse: {e}")
+            messagebox.showerror("Fehler", f"Unerwarteter Fehler bei der Story-Analyse: {e}")
     
     def optimize_emotional_depth(self):
         """Optimiert die emotionale Tiefe der Story"""
@@ -461,8 +473,12 @@ Konzentriere dich auf authentische, tiefgreifende Emotionen."""
             self.story_results_text.delete(1.0, tk.END)
             self.story_results_text.insert(1.0, result)
             
-        except Exception as e:
+        except (ValueError, AttributeError) as e:
+            logger.error(f"Fehler bei der emotionalen Optimierung (Daten/Attribut): {e}")
             messagebox.showerror("Fehler", f"Fehler bei der emotionalen Optimierung: {e}")
+        except Exception as e:
+            logger.exception(f"Unerwarteter Fehler bei der emotionalen Optimierung: {e}")
+            messagebox.showerror("Fehler", f"Unerwarteter Fehler bei der emotionalen Optimierung: {e}")
     
     def develop_plot(self):
         """Entwickelt den Plot weiter"""
@@ -503,8 +519,12 @@ Mache den Plot spannend und logisch kohärent."""
             self.story_results_text.delete(1.0, tk.END)
             self.story_results_text.insert(1.0, result)
             
-        except Exception as e:
+        except (ValueError, AttributeError) as e:
+            logger.error(f"Fehler bei der Plot-Entwicklung (Daten/Attribut): {e}")
             messagebox.showerror("Fehler", f"Fehler bei der Plot-Entwicklung: {e}")
+        except Exception as e:
+            logger.exception(f"Unerwarteter Fehler bei der Plot-Entwicklung: {e}")
+            messagebox.showerror("Fehler", f"Unerwarteter Fehler bei der Plot-Entwicklung: {e}")
     
     def develop_character(self):
         """Entwickelt Charaktere weiter"""
@@ -716,9 +736,9 @@ Mache den Arc überzeugend und bedeutungsvoll."""
                 if self.anthropic_api_key and len(self.anthropic_api_key.strip()) > 0:
                     try:
                         self.claude_client = anthropic.Anthropic(api_key=self.anthropic_api_key)
-                        print("Claude Client erfolgreich initialisiert")
+                        logger.info("Claude Client erfolgreich initialisiert")
                     except Exception as e:
-                        print(f"Claude Client Initialisierung fehlgeschlagen: {e}")
+                        logger.error(f"Claude Client Initialisierung fehlgeschlagen: {e}")
                         self.claude_client = None
                 
                 messagebox.showinfo("Erfolg", "API Keys wurden erfolgreich gespeichert!")

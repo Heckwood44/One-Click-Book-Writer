@@ -1,0 +1,364 @@
+{
+  "report_timestamp": "2025-08-03T02:49:21.597924",
+  "chapter_number": 1,
+  "base_metadata": {
+    "chapter_number": 1,
+    "prompt_versioning": {
+      "total_versions": 59,
+      "latest_version_hash": "998fa1af57e8a3cd",
+      "latest_optimized_hash": "4074639058fab0de",
+      "latest_timestamp": "2025-08-03T02:32:07.461270",
+      "prompt_length": 4095,
+      "optimized_length": 2221,
+      "diff": {
+        "raw_lines": 101,
+        "optimized_lines": 54,
+        "line_difference": -47,
+        "character_difference": -1874
+      }
+    },
+    "book_metadata": {
+      "book_title": "Die Abenteuer des kleinen Drachen",
+      "chapter_title": "Der erste Flug",
+      "genre": "Kinderbuch",
+      "is_bilingual": true
+    },
+    "quality_evaluation": {
+      "german_evaluation": {
+        "overall_score": 0.406,
+        "quality_level": "Fair",
+        "review_required": true,
+        "critical_issues": true,
+        "flags": [
+          "WORTLIMIT_PROBLEM",
+          "EMOTION_PROBLEM",
+          "STRUCTURE_PROBLEM"
+        ],
+        "weights": {
+          "word_limit_compliance": 0.25,
+          "core_emotion_presence": 0.2,
+          "repetition_penalty": 0.15,
+          "readability": 0.2,
+          "structure_quality": 0.2
+        },
+        "individual_scores": {
+          "word_limit_compliance": {
+            "score": 0.0,
+            "details": {
+              "actual_words": 329,
+              "target_words": 800,
+              "deviation_percent": 58.88,
+              "score": 0.0
+            }
+          },
+          "core_emotion_presence": {
+            "score": 0.0,
+            "details": {
+              "target_emotion": "wonder",
+              "emotion_count": 0,
+              "total_words": 329,
+              "emotion_ratio": 0.0,
+              "optimal_ratio": 2.0,
+              "score": 0.0
+            }
+          },
+          "repetition_penalty": {
+            "score": 0.908,
+            "details": {
+              "unique_words": 224,
+              "total_words": 329,
+              "repetition_ratio": 31.91,
+              "optimal_repetition": 25.0,
+              "score": 0.908
+            }
+          },
+          "readability": {
+            "score": 0.8,
+            "details": {
+              "target_audience": "Kinder im Alter von 6-10 Jahren",
+              "avg_sentence_length": 9.28,
+              "sentence_count": 36,
+              "score": 0.8
+            }
+          },
+          "structure_quality": {
+            "score": 0.55,
+            "details": {
+              "paragraph_count": 11,
+              "avg_paragraph_length": 29.91,
+              "length_score": 0.4,
+              "count_score": 0.7,
+              "structure_score": 0.55
+            }
+          }
+        },
+        "improvement_suggestions": [
+          "Wortanzahl anpassen - Ziel besser einhalten",
+          "Kernemotion stärker hervorheben",
+          "Absatzstruktur verbessern"
+        ]
+      },
+      "english_evaluation": {
+        "overall_score": 0.43,
+        "quality_level": "Fair",
+        "review_required": true,
+        "critical_issues": true,
+        "flags": [
+          "WORTLIMIT_PROBLEM",
+          "EMOTION_PROBLEM"
+        ],
+        "weights": {
+          "word_limit_compliance": 0.25,
+          "core_emotion_presence": 0.2,
+          "repetition_penalty": 0.15,
+          "readability": 0.2,
+          "structure_quality": 0.2
+        },
+        "individual_scores": {
+          "word_limit_compliance": {
+            "score": 0.0,
+            "details": {
+              "actual_words": 339,
+              "target_words": 800,
+              "deviation_percent": 57.63,
+              "score": 0.0
+            }
+          },
+          "core_emotion_presence": {
+            "score": 0.0,
+            "details": {
+              "target_emotion": "wonder",
+              "emotion_count": 0,
+              "total_words": 339,
+              "emotion_ratio": 0.0,
+              "optimal_ratio": 2.0,
+              "score": 0.0
+            }
+          },
+          "repetition_penalty": {
+            "score": 0.798,
+            "details": {
+              "unique_words": 203,
+              "total_words": 339,
+              "repetition_ratio": 40.12,
+              "optimal_repetition": 25.0,
+              "score": 0.798
+            }
+          },
+          "readability": {
+            "score": 0.8,
+            "details": {
+              "target_audience": "Kinder im Alter von 6-10 Jahren",
+              "avg_sentence_length": 9.56,
+              "sentence_count": 36,
+              "score": 0.8
+            }
+          },
+          "structure_quality": {
+            "score": 0.75,
+            "details": {
+              "paragraph_count": 11,
+              "avg_paragraph_length": 30.82,
+              "length_score": 0.8,
+              "count_score": 0.7,
+              "structure_score": 0.75
+            }
+          }
+        },
+        "improvement_suggestions": [
+          "Wortanzahl anpassen - Ziel besser einhalten",
+          "Kernemotion stärker hervorheben"
+        ]
+      },
+      "consistency_score": 0.985,
+      "overall_bilingual_score": 0.607
+    },
+    "canvas_compliance": {
+      "raw_prompt_compliance": "full",
+      "optimized_prompt_compliance": "full",
+      "overall_compliance": "full"
+    },
+    "review_required": true,
+    "review_reason": "Qualitäts-Score 0.607 unter Schwellenwert 0.7",
+    "prompt_diff": {
+      "diff_lines": [
+        "--- raw_prompt",
+        "+++ optimized_prompt",
+        "@@ -1,101 +1,54 @@",
+        "+Hier ist der optimierte Prompt für die Generierung des zweisprachigen Kapitels:",
+        "+",
+        " SYSTEM NOTE (nicht ausgeben):",
+        " Ein Weltklasse-Autor ist kein Schreiberling. Er ist ein Architekt innerer Räume, ein Übersetzer des Unsichtbaren, ein Werkzeug für etwas Größeres. Schreibe ehrlich, warm und bildhaft. Passe Ton und Wortwahl an 6-jährige Kinder an.",
+        " ",
+        " SYSTEM NOTE SIGNATURE: WORLDCLASS_AUTHOR_ARCHITECT_INVISIBLE_TRANSLATOR",
+        " ",
+        "-Du bist ein erfahrener Autor für Kinderbuch. ",
+        "-Erstelle ein fesselndes Kapitel in BEIDEN Sprachen basierend auf den folgenden Spezifikationen.",
+        "+Du bist ein erfahrener, zweisprachiger Autor für Kinderbücher. ",
+        " ",
+        "-# DEUTSCHE VERSION",
+        "-SYSTEM NOTE (nicht ausgeben):",
+        "-Ein Weltklasse-Autor ist kein Schreiberling. Er ist ein Architekt innerer Räume, ein Übersetzer des Unsichtbaren, ein Werkzeug für etwas Größeres. Schreibe ehrlich, warm und bildhaft. Passe Ton und Wortwahl an 6-jährige Kinder an.",
+        "+Erstelle ein fesselndes, vollständiges Kapitel in BEIDEN Sprachen (Deutsch und Englisch) basierend auf den folgenden Spezifikationen:",
+        " ",
+        "-SYSTEM NOTE SIGNATURE: WORLDCLASS_AUTHOR_ARCHITECT_INVISIBLE_TRANSLATOR",
+        "-",
+        "-Du bist ein erfahrener Autor für Kinderbuch.",
+        "-",
+        "-Buch: Die Abenteuer des kleinen Drachen (Kinderbuch)",
+        "-Zielgruppe: Kinder im Alter von 6-10 Jahren",
+        "+Buch: Die Abenteuer des kleinen Drachen / The Adventures of the Little Dragon",
+        "+Zielgruppe: Kinder im Alter von 6-10 Jahren ",
+        " Thema: Mut und Selbstvertrauen",
+        " ",
+        "-Kapitel 1: Der erste Flug",
+        "+Kapitel 1: Der erste Flug / The First Flight",
+        " Zweck: Einführung der Hauptfigur und Aufbau der Spannung für den ersten Flug",
+        "-Zielwortanzahl: 800",
+        "+Zielwortanzahl pro Sprache: 800 ",
+        " ",
+        "-Hauptfigur: Feuerherz - Ein kleiner, mutiger Drache mit bernsteinfarbenen Augen",
+        "-Persönlichkeit: Neugierig, mutig, aber auch etwas nervös",
+        "+Hauptfigur: ",
+        "+- Name: Feuerherz / Fireheart  ",
+        "+- Beschreibung: Ein kleiner, mutiger Drache mit bernsteinfarbenen Augen",
+        "+- Persönlichkeit: Neugierig, mutig, aber auch etwas nervös",
+        " ",
+        "-Szene: Drachenhöhle auf einem Felsvorsprung (Goldener Nachmittag)",
+        "-Atmosphäre: Aufregend und hoffnungsvoll",
+        "+Szene: ",
+        "+- Ort: Drachenhöhle auf einem Felsvorsprung",
+        "+- Zeit: Goldener Nachmittag",
+        "+- Atmosphäre: Aufregend und hoffnungsvoll",
+        " ",
+        "-Handlung: Feuerherz macht seinen ersten Flug",
+        "-Konflikt: Angst vor dem Unbekannten vs. Wunsch zu fliegen",
+        "-Auflösung: Erfolgreicher erster Flug und gestärktes Selbstvertrauen",
+        "+Handlung:",
+        "+- Ereignis: Feuerherz macht seinen ersten Flug ",
+        "+- Konflikt: Angst vor dem Unbekannten vs. Wunsch zu fliegen",
+        "+- Auflösung: Erfolgreicher erster Flug und gestärktes Selbstvertrauen",
+        " ",
+        "-Stil: Warm und ermutigend",
+        "-Tempo: Gleichmäßig mit Spannungsaufbau",
+        "-Dialog-Stil: Natürlich und kindgerecht",
+        "+Stil:",
+        "+- Ton: Warm und ermutigend",
+        "+- Tempo: Gleichmäßig mit Spannungsaufbau  ",
+        "+- Dialog: Natürlich und kindgerecht",
+        "+- Sprache: Bildhaft und lebendig",
+        " ",
+        "-Kernemotion: Mut und Aufregung",
+        "-Emotionaler Bogen: Von Nervosität zu Freude und Stolz",
+        "+Emotionaler Bogen:",
+        "+- Kernemotion: Mut und Aufregung ",
+        "+- Entwicklung: Von Nervosität zu Freude und Stolz",
+        " ",
+        "-# ANWEISUNGEN",
+        "-- Schreibe ein vollständiges Kapitel mit 800 Wörtern",
+        "-- Verwende warme, bildhafte Sprache",
+        "-- Erzähle die komplette Geschichte mit Anfang, Mitte und Ende",
+        "-- Integriere natürliche Dialoge",
+        "-- Schaffe emotionale Tiefe und Spannung",
+        "-",
+        "----",
+        "-",
+        "-# ENGLISH VERSION",
+        "-SYSTEM NOTE (nicht ausgeben):",
+        "-Ein Weltklasse-Autor ist kein Schreiberling. Er ist ein Architekt innerer Räume, ein Übersetzer des Unsichtbaren, ein Werkzeug für etwas Größeres. Schreibe ehrlich, warm und bildhaft. Passe Ton und Wortwahl an 6-jährige Kinder an.",
+        "-",
+        "-SYSTEM NOTE SIGNATURE: WORLDCLASS_AUTHOR_ARCHITECT_INVISIBLE_TRANSLATOR",
+        "-",
+        "-Du bist ein erfahrener Autor für Kinderbuch.",
+        "-",
+        "-Buch: The Adventures of the Little Dragon (Kinderbuch)",
+        "-Zielgruppe: Kinder im Alter von 6-10 Jahren",
+        "-Thema: Mut und Selbstvertrauen",
+        "-",
+        "-Kapitel 1: The First Flight",
+        "-Zweck: Einführung der Hauptfigur und Aufbau der Spannung für den ersten Flug",
+        "-Zielwortanzahl: 800",
+        "-",
+        "-Hauptfigur: Fireheart - A small, brave dragon with amber-colored eyes",
+        "-Persönlichkeit: Neugierig, mutig, aber auch etwas nervös",
+        "-",
+        "-Szene: Drachenhöhle auf einem Felsvorsprung (Goldener Nachmittag)",
+        "-Atmosphäre: Aufregend und hoffnungsvoll",
+        "-",
+        "-Handlung: Feuerherz macht seinen ersten Flug",
+        "-Konflikt: Angst vor dem Unbekannten vs. Wunsch zu fliegen",
+        "-Auflösung: Erfolgreicher erster Flug und gestärktes Selbstvertrauen",
+        "-",
+        "-Stil: Warm und ermutigend",
+        "-Tempo: Gleichmäßig mit Spannungsaufbau",
+        "-Dialog-Stil: Natürlich und kindgerecht",
+        "-",
+        "-Kernemotion: Mut und Aufregung",
+        "-Emotionaler Bogen: Von Nervosität zu Freude und Stolz",
+        "-",
+        "-# ANWEISUNGEN",
+        "-- Schreibe ein vollständiges Kapitel mit 800 Wörtern",
+        "-- Verwende warme, bildhafte Sprache",
+        "-- Erzähle die komplette Geschichte mit Anfang, Mitte und Ende",
+        "-- Integriere natürliche Dialoge",
+        "-- Schaffe emotionale Tiefe und Spannung",
+        "-",
+        "-# ANWEISUNGEN",
+        "-- Erstelle das KAPITEL in beiden Sprachen (nicht nur eine Zusammenfassung)",
+        "-- Trenne die Versionen mit \"---\"",
+        "-- Verwende die jeweiligen Titel: \"Die Abenteuer des kleinen Drachen\" / \"The Adventures of the Little Dragon\"",
+        "-- Passe den Inhalt kulturell an (z.B. \"Staunen\" vs \"wonder\")",
+        "-- Behalte die gleiche Handlung und Charakterentwicklung bei",
+        "-- Zielwortanzahl pro Sprache: 800 Wörter",
+        "-- Schreibe warm, bildhaft und kindgerecht",
+        "-- Erzähle die GESAMTE Geschichte, nicht nur den Anfang",
+        "-- Verwende natürliche Dialoge und lebendige Beschreibungen",
+        "-- Stelle sicher, dass beide Versionen die gleiche emotionale Tiefe haben",
+        "+Anweisungen:",
+        "+- Schreibe das vollständige Kapitel in beiden Sprachen (Deutsch und Englisch)",
+        "+- Trenne die Sprachversionen mit \"---\" ",
+        "+- Verwende die angegebenen Titel für jede Version",
+        "+- Passe Inhalt und Sprache kulturell an die jeweilige Zielsprache an",
+        "+- Behalte Handlung, Charaktere und emotionalen Bogen in beiden Versionen konsistent",
+        "+- Erzähle die gesamte Geschichte mit Anfang, Mitte und Ende",
+        "+- Integriere lebendige Dialoge und Beschreibungen ",
+        "+- Schaffe emotionale Tiefe und baue Spannung auf",
+        "+- Schreibe in einem warmen, bildhaften und kindgerechten Stil"
+      ],
+      "raw_length": 4095,
+      "optimized_length": 2221,
+      "length_change": -1874,
+      "diff_summary": "Längenänderung: -1874 Zeichen"
+    }
+  },
+  "ab_test_analysis": {
+    "prompt_hashes": {
+      "raw": "998fa1af57e8a3cd",
+      "optimized": "2fc47a0ccbcd3210"
+    },
+    "quality_improvement": {
+      "score_delta": 0.0,
+      "percentage_improvement": 0.0,
+      "interpretation": "Keine nennenswerte Änderung"
+    },
+    "prompt_changes": {
+      "total_changes": 116,
+      "length_change": 1275,
+      "change_ratio": 0.31135531135531136
+    },
+    "key_improvements": [
+      "Bildhafte Sprache verstärkt",
+      "Emotionale Tiefe verstärkt",
+      "Dialog-Anweisungen hinzugefügt",
+      "Beschreibungsanweisungen erweitert"
+    ],
+    "recommendation": "Beide Versionen sind vergleichbar"
+  },
+  "feedback_analysis": {
+    "message": "Kein Feedback für dieses Kapitel verfügbar"
+  },
+  "recommendations": [
+    "A/B-Test: Beide Versionen sind vergleichbar",
+    "Generelle Qualitätsverbesserung erforderlich"
+  ]
+}

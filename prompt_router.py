@@ -156,6 +156,21 @@ OPTIMIERTER PROMPT:
             logger.error(f"Fehler beim Parsen der bilingualen Antwort: {e}")
             return response, response
     
+    def retry_with_extended_prompt(self, prompt: str, target_words: int = 800) -> str:
+        """Erweitert den Prompt für bessere Wortanzahl"""
+        extension_instruction = f"""
+
+WICHTIGE ERGÄNZUNG:
+- Erweitere die Geschichte so, dass sie mindestens {target_words} Wörter umfasst
+- Behalte dabei den Stil, die Emotionen und die Charakterentwicklung bei
+- Füge mehr Details, Dialoge und Beschreibungen hinzu
+- Stelle sicher, dass die Geschichte vollständig erzählt wird (Anfang, Mitte, Ende)
+- Verwende warme, bildhafte Sprache für Kinder
+
+Ziel: Eine vollständige, fesselnde Geschichte mit mindestens {target_words} Wörtern."""
+        
+        return prompt + extension_instruction
+    
     def save_output_files(self, 
                          german_text: str, 
                          english_text: str, 

@@ -1,0 +1,113 @@
+{
+  "feedback_entries": [
+    {
+      "timestamp": "2025-08-03T02:49:21.595402",
+      "chapter_number": 1,
+      "prompt_hash": "998fa1af57e8a3cd",
+      "quality_score": 0.613,
+      "language": "de",
+      "user_rating": 4,
+      "user_comment": "Gute Grundstruktur, aber könnte mehr emotionale Tiefe haben",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-08-03T02:49:21.596033",
+      "chapter_number": 1,
+      "prompt_hash": "998fa1af57e8a3cd",
+      "quality_score": 0.613,
+      "language": "en",
+      "user_rating": 3,
+      "user_comment": "Solid foundation, needs more engaging dialogue",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-08-03T02:49:21.596451",
+      "chapter_number": 1,
+      "prompt_hash": "2fc47a0ccbcd3210",
+      "quality_score": 0.613,
+      "language": "de",
+      "user_rating": 4,
+      "user_comment": "Sehr gute emotionale Tiefe und bildhafte Sprache",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-08-03T02:49:21.596837",
+      "chapter_number": 1,
+      "prompt_hash": "2fc47a0ccbcd3210",
+      "quality_score": 0.613,
+      "language": "en",
+      "user_rating": 3,
+      "user_comment": "Much better emotional engagement and dialogue",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-08-03T02:56:58.627650",
+      "chapter_number": 1,
+      "prompt_hash": "d5ffd10afbe83c0a",
+      "quality_score": 0.509,
+      "language": "de",
+      "user_rating": 3,
+      "user_comment": "Durchschnittliche Qualität, Verbesserungspotential vorhanden",
+      "metadata": {}
+    }
+  ],
+  "statistics": {
+    "overall": {
+      "total_entries": 5,
+      "avg_rating": 3.4,
+      "avg_quality_score": 0.5922,
+      "rating_std": 0.5477225575051661,
+      "quality_std": 0.046510213931995614
+    },
+    "by_prompt_hash": {
+      "998fa1af57e8a3cd": {
+        "count": 2,
+        "ratings": [
+          4,
+          3
+        ],
+        "quality_scores": [
+          0.613,
+          0.613
+        ],
+        "avg_rating": 3.5,
+        "avg_quality_score": 0.613,
+        "rating_std": 0.7071067811865476,
+        "quality_std": 0.0
+      },
+      "2fc47a0ccbcd3210": {
+        "count": 2,
+        "ratings": [
+          4,
+          3
+        ],
+        "quality_scores": [
+          0.613,
+          0.613
+        ],
+        "avg_rating": 3.5,
+        "avg_quality_score": 0.613,
+        "rating_std": 0.7071067811865476,
+        "quality_std": 0.0
+      },
+      "d5ffd10afbe83c0a": {
+        "count": 1,
+        "ratings": [
+          3
+        ],
+        "quality_scores": [
+          0.509
+        ],
+        "avg_rating": 3,
+        "avg_quality_score": 0.509,
+        "rating_std": 0,
+        "quality_std": 0
+      }
+    },
+    "last_updated": "2025-08-03T02:56:58.627999"
+  },
+  "metadata": {
+    "created": "2025-08-03T02:48:15.431168",
+    "total_entries": 5
+  }
+}

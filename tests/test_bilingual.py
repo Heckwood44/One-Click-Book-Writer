@@ -41,8 +41,12 @@ def test_bilingual():
     # Erstelle einfaches Result-Format
     chapter_result = {
         "type": "single_language",
+        "content": {
+            "de": chapter_text,
+            "en": chapter_text
+        }
     }
-    }    print(f"✅ Generierung erfolgreich!")
+    print(f"✅ Generierung erfolgreich!")
     print(f"   - Typ: {chapter_result['type']}")
     print(f"   - Sprachen: {list(chapter_result['content'].keys())}")
     

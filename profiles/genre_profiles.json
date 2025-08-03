@@ -1,0 +1,77 @@
+{
+  "adventure": {
+    "name": "Abenteuer",
+    "description": "Spannende Geschichten mit Herausforderungen und Entdeckungen",
+    "key_elements": ["action", "exploration", "challenges", "discovery"],
+    "emotional_focus": "excitement",
+    "pacing": "fast",
+    "conflict_type": "external",
+    "resolution_style": "triumphant",
+    "style_guidelines": {
+      "tone": "energetic",
+      "sentence_structure": "dynamic",
+      "imagery": "vivid",
+      "dialogue": "action-oriented"
+    }
+  },
+  "fantasy": {
+    "name": "Fantasy",
+    "description": "Magische Welten mit übernatürlichen Elementen",
+    "key_elements": ["magic", "mythical_creatures", "otherworldly_settings", "quests"],
+    "emotional_focus": "wonder",
+    "pacing": "varied",
+    "conflict_type": "epic",
+    "resolution_style": "transformative",
+    "style_guidelines": {
+      "tone": "mystical",
+      "sentence_structure": "descriptive",
+      "imagery": "enchanting",
+      "dialogue": "otherworldly"
+    }
+  },
+  "self_discovery": {
+    "name": "Selbstfindung",
+    "description": "Geschichten über persönliches Wachstum und Identität",
+    "key_elements": ["personal_growth", "identity", "reflection", "transformation"],
+    "emotional_focus": "introspection",
+    "pacing": "contemplative",
+    "conflict_type": "internal",
+    "resolution_style": "enlightening",
+    "style_guidelines": {
+      "tone": "reflective",
+      "sentence_structure": "thoughtful",
+      "imagery": "metaphorical",
+      "dialogue": "introspective"
+    }
+  },
+  "friendship": {
+    "name": "Freundschaft",
+    "description": "Geschichten über Beziehungen und Verbindungen",
+    "key_elements": ["relationships", "loyalty", "trust", "support"],
+    "emotional_focus": "connection",
+    "pacing": "steady",
+    "conflict_type": "relational",
+    "resolution_style": "reconciliatory",
+    "style_guidelines": {
+      "tone": "warm",
+      "sentence_structure": "conversational",
+      "imagery": "intimate",
+      "dialogue": "natural"
+    }
+  },
+  "mystery": {
+    "name": "Mystery",
+    "description": "Rätselhafte Geschichten mit Überraschungen",
+    "key_elements": ["secrets", "clues", "suspense", "reveals"],
+    "emotional_focus": "curiosity",
+    "pacing": "suspenseful",
+    "conflict_type": "puzzling",
+    "resolution_style": "revealing",
+    "style_guidelines": {
+      "tone": "intriguing",
+      "sentence_structure": "building",
+      "imagery": "atmospheric",
+      "dialogue": "clue-laden"
+    }
+  }
+} 

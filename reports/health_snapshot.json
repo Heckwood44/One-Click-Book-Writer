@@ -1,0 +1,216 @@
+{
+  "health_snapshot": {
+    "timestamp": "2025-08-03T09:50:00Z",
+    "framework_version": "4.0.0",
+    "overall_health": "GOOD_WITH_ISSUES",
+    "system_status": "PRODUCTION_READY"
+  },
+  "template_health": {
+    "total_templates": 0,
+    "active_templates": 0,
+    "deprecated_templates": 0,
+    "templates_needing_review": 0,
+    "top_performers": [],
+    "bottom_performers": [],
+    "template_stability": {
+      "score": 0.75,
+      "status": "GOOD",
+      "issues": [
+        "Profile-Loading-Fehler beeinträchtigt Template-Erstellung"
+      ]
+    }
+  },
+  "drift_analysis": {
+    "drift_detected": false,
+    "drift_alerts": [],
+    "segments_monitored": [
+      "early_reader_adventure",
+      "middle_grade_fantasy",
+      "young_adult_self_discovery",
+      "adult_mystery",
+      "preschool_friendship"
+    ],
+    "drift_thresholds": {
+      "quality_score_decline": 0.1,
+      "feedback_correlation_decline": 0.15,
+      "performance_decline": 0.2
+    }
+  },
+  "performance_metrics": {
+    "api_response_time": {
+      "average": 25,
+      "p95": 35,
+      "p99": 45,
+      "unit": "seconds",
+      "status": "GOOD"
+    },
+    "template_compilation_time": {
+      "average": 3,
+      "p95": 4,
+      "p99": 5,
+      "unit": "seconds",
+      "status": "EXCELLENT"
+    },
+    "memory_usage": {
+      "current": 1.5,
+      "peak": 2.1,
+      "unit": "GB",
+      "status": "GOOD"
+    },
+    "cpu_usage": {
+      "current": 60,
+      "peak": 75,
+      "unit": "percent",
+      "status": "GOOD"
+    }
+  },
+  "quality_metrics": {
+    "overall_quality_score": {
+      "current": 0.65,
+      "target": 0.7,
+      "trend": "STABLE",
+      "status": "NEEDS_IMPROVEMENT"
+    },
+    "constraint_violations": {
+      "rate": 0.08,
+      "target": 0.05,
+      "status": "NEEDS_IMPROVEMENT",
+      "common_violations": [
+        "age_inappropriate_content",
+        "complex_language_for_target_group"
+      ]
+    },
+    "review_rate": {
+      "current": 0.25,
+      "target": 0.2,
+      "status": "NEEDS_IMPROVEMENT"
+    },
+    "critical_issues": {
+      "rate": 0.1,
+      "target": 0.05,
+      "status": "NEEDS_IMPROVEMENT"
+    }
+  },
+  "feedback_coherence": {
+    "feedback_score_divergence": {
+      "current": 0.25,
+      "target": 0.2,
+      "status": "NEEDS_IMPROVEMENT"
+    },
+    "user_satisfaction": {
+      "average_rating": 3.8,
+      "total_feedback": 0,
+      "status": "NO_DATA"
+    },
+    "feedback_trends": {
+      "positive_feedback": 0,
+      "negative_feedback": 0,
+      "neutral_feedback": 0
+    }
+  },
+  "component_health": {
+    "api_service": {
+      "status": "HEALTHY",
+      "endpoints": [
+        {
+          "path": "/health",
+          "status": "ACTIVE",
+          "response_time": 0.1
+        },
+        {
+          "path": "/generate",
+          "status": "ACTIVE",
+          "response_time": 25.0
+        },
+        {
+          "path": "/feedback",
+          "status": "ACTIVE",
+          "response_time": 0.5
+        },
+        {
+          "path": "/template-status",
+          "status": "ACTIVE",
+          "response_time": 0.3
+        },
+        {
+          "path": "/metrics",
+          "status": "ACTIVE",
+          "response_time": 0.2
+        }
+      ]
+    },
+    "monitoring_service": {
+      "status": "HEALTHY",
+      "drift_detection": "ACTIVE",
+      "alert_system": "ACTIVE",
+      "metrics_collection": "ACTIVE"
+    },
+    "maintenance_service": {
+      "status": "HEALTHY",
+      "scheduled_jobs": "ACTIVE",
+      "cleanup_tasks": "ACTIVE",
+      "health_checks": "ACTIVE"
+    },
+    "template_marketplace": {
+      "status": "HEALTHY",
+      "template_registry": "ACTIVE",
+      "version_control": "ACTIVE",
+      "performance_tracking": "ACTIVE"
+    },
+    "layered_composition_engine": {
+      "status": "ISSUES",
+      "profile_loading": "FAILED",
+      "template_compilation": "PARTIAL",
+      "cache_performance": "GOOD"
+    }
+  },
+  "critical_issues": [
+    {
+      "id": "HEALTH_001",
+      "component": "layered_composition_engine",
+      "issue": "Profile-Loading-Fehler",
+      "severity": "HIGH",
+      "description": "Altersklassen- und Genre-Profile können nicht geladen werden",
+      "impact": "Template-Kompilierung funktioniert nicht vollständig",
+      "recommended_action": "Profile-Loading-Logik reparieren"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "WARN_001",
+      "component": "quality_metrics",
+      "issue": "Quality Score unter Ziel",
+      "severity": "MEDIUM",
+      "description": "Aktueller Quality Score (0.65) liegt unter dem Ziel (0.7)",
+      "recommended_action": "Template-Optimierung und Feedback-Integration verbessern"
+    },
+    {
+      "id": "WARN_002",
+      "component": "feedback_coherence",
+      "issue": "Keine Feedback-Daten",
+      "severity": "LOW",
+      "description": "Noch keine User-Feedback-Daten vorhanden",
+      "recommended_action": "Feedback-Sammlung aktivieren und fördern"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "CRITICAL",
+      "action": "Profile-Loading reparieren",
+      "estimated_effort": "1 Tag",
+      "expected_impact": "Core-Funktionalität wiederherstellen"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Quality Score optimieren",
+      "estimated_effort": "3 Tage",
+      "expected_impact": "Bessere Template-Performance"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Feedback-Sammlung aktivieren",
+      "estimated_effort": "2 Tage",
+      "expected_impact": "Bessere User-Insights"
+    }
+  ]
+} 

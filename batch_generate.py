@@ -9,9 +9,14 @@ import os
 import sys
 import argparse
 import time
+import logging
 from pathlib import Path
 from typing import Dict, Any, List
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# Setup Logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 # Add project root to path
 sys.path.append(str(Path(__file__).parent))
@@ -23,16 +28,16 @@ from schema.validate_input import validate_json_schema, validate_prompt_frame_st
 class BatchGenerator:
     """Batch-Generator für mehrere Kapitel."""
     
-    def __init__(self, base_prompt_frame: Dict[str, Any]):
+    def __init__(self, base_prompt_frame: Dict[str, Any]) -> None:
         """
         Initialisiert den Batch-Generator.
         
         Args:
             base_prompt_frame: Basis-PromptFrame für alle Kapitel
         """
-        self.base_prompt_frame = base_prompt_frame
-        self.results = []
-        self.errors = []
+        self.base_prompt_frame: Dict[str, Any] = base_prompt_frame
+        self.results: List[Dict[str, Any]] = []
+        self.errors: List[Dict[str, Any]] = []
     
     def generate_chapters(self, start_chapter: int, count: int, engine: str = "claude", 
                          temperature: float = 0.4, max_tokens: int = 8000, 
@@ -51,10 +56,10 @@ class BatchGenerator:
         Returns:
             Liste der Generierungsergebnisse
         """
-        print(f"🚀 Starte Batch-Generierung: {count} Kapitel ab Kapitel {start_chapter}")
-        print(f"🤖 Engine: {engine}, Temperature: {temperature}, Max Tokens: {max_tokens}")
-        print(f"⚡ Parallele Threads: {max_workers}")
-        print("-" * 60)
+        logger.info(f"🚀 Starte Batch-Generierung: {count} Kapitel ab Kapitel {start_chapter}")
+        logger.info(f"🤖 Engine: {engine}, Temperature: {temperature}, Max Tokens: {max_tokens}")
+        logger.info(f"⚡ Parallele Threads: {max_workers}")
+        logger.info("-" * 60)
         
         # Kapitel-Liste erstellen
         chapters = []
@@ -84,28 +89,35 @@ class BatchGenerator:
                 try:
                     result = future.result()
                     results.append(result)
-                    print(f"✅ Kapitel {chapter['chapter_num']} generiert")
-                except Exception as e:
-                    error_msg = f"Fehler bei Kapitel {chapter['chapter_num']}: {e}"
-                    print(f"❌ {error_msg}")
+                    logger.info(f"✅ Kapitel {chapter['chapter_num']} generiert")
+                except (ValueError, AttributeError, KeyError) as e:
+                    error_msg = f"Fehler bei Kapitel {chapter['chapter_num']} (Daten/Attribut): {e}"
+                    logger.error(f"❌ {error_msg}")
                     self.errors.append({
                         "chapter_num": chapter['chapter_num'],
-                        "error": str(e)
+                        "error": f"Datenfehler: {str(e)}"
+                    })
+                except Exception as e:
+                    error_msg = f"Unerwarteter Fehler bei Kapitel {chapter['chapter_num']}: {e}"
+                    logger.exception(f"❌ {error_msg}")
+                    self.errors.append({
+                        "chapter_num": chapter['chapter_num'],
+                        "error": f"Unerwarteter Fehler: {str(e)}"
                     })
         
         # Ergebnisse sortieren
         results.sort(key=lambda x: x['chapter_num'])
         
         # Zusammenfassung
-        print("-" * 60)
-        print(f"🎉 Batch-Generierung abgeschlossen!")
-        print(f"✅ Erfolgreich: {len(results)} Kapitel")
-        print(f"❌ Fehler: {len(self.errors)} Kapitel")
+        logger.info("-" * 60)
+        logger.info(f"🎉 Batch-Generierung abgeschlossen!")
+        logger.info(f"✅ Erfolgreich: {len(results)} Kapitel")
+        logger.info(f"❌ Fehler: {len(self.errors)} Kapitel")
         
         if self.errors:
-            print("\nFehler-Details:")
+            logger.error("\nFehler-Details:")
             for error in self.errors:
-                print(f"  Kapitel {error['chapter_num']}: {error['error']}")
+                logger.error(f"  Kapitel {error['chapter_num']}: {error['error']}")
         
         return results
     
@@ -335,7 +347,7 @@ Am Ende des Kapitels steht eine neue Wendung, die die Leser neugierig auf das n�
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
         
-        print(f"📊 Batch-Zusammenfassung gespeichert: {output_file}")
+        logger.info(f"📊 Batch-Zusammenfassung gespeichert: {output_file}")
 
 
 def load_prompt_frame(file_path: str) -> Dict[str, Any]:
@@ -381,9 +393,9 @@ def main():
     
     try:
         # PromptFrame laden
-        print(f"📖 Lade PromptFrame aus {args.input}...")
+        logger.info(f"📖 Lade PromptFrame aus {args.input}...")
         base_prompt_frame = load_prompt_frame(args.input)
-        print("✅ PromptFrame erfolgreich geladen und validiert")
+        logger.info("✅ PromptFrame erfolgreich geladen und validiert")
         
         # Batch-Generator erstellen
         generator = BatchGenerator(base_prompt_frame)
@@ -401,13 +413,14 @@ def main():
         # Zusammenfassung speichern
         generator.save_batch_summary(results, args.output)
         
-        print(f"\n🎉 Batch-Generierung erfolgreich abgeschlossen!")
-        print(f"📁 Ergebnisse in: output/chapters/")
+        logger.info(f"\n🎉 Batch-Generierung erfolgreich abgeschlossen!")
+        logger.info(f"📁 Ergebnisse in: output/chapters/")
         
     except Exception as e:
-        print(f"❌ Fehler: {e}")
+        logger.error(f"❌ Fehler: {e}")
         sys.exit(1)
 
 
 if __name__ == "__main__":
+    main() 
     main() 
