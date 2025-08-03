@@ -49,15 +49,57 @@
       "user_rating": 3,
       "user_comment": "Durchschnittliche Qualität, Verbesserungspotential vorhanden",
       "metadata": {}
+    },
+    {
+      "timestamp": "2025-08-03T15:01:09.890090",
+      "chapter_number": 1,
+      "prompt_hash": "4856557e12402094",
+      "quality_score": 0.0,
+      "language": "de",
+      "user_rating": 2,
+      "user_comment": "Qualität verbesserungsbedürftig für adventure",
+      "metadata": {
+        "age_group": "early_reader",
+        "genre": "adventure",
+        "emotion": "courage",
+        "evaluation_scores": {
+          "readability": 0.0,
+          "age_appropriateness": 0.0,
+          "genre_compliance": 0.0,
+          "emotional_depth": 0.0,
+          "engagement": 0.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-03T15:03:16.245293",
+      "chapter_number": 1,
+      "prompt_hash": "9f5efba5786efd23",
+      "quality_score": 0.0,
+      "language": "de",
+      "user_rating": 2,
+      "user_comment": "Qualität verbesserungsbedürftig für fantasy",
+      "metadata": {
+        "age_group": "middle_grade",
+        "genre": "fantasy",
+        "emotion": "wonder",
+        "evaluation_scores": {
+          "readability": 0.0,
+          "age_appropriateness": 0.0,
+          "genre_compliance": 0.0,
+          "emotional_depth": 0.0,
+          "engagement": 0.0
+        }
+      }
     }
   ],
   "statistics": {
     "overall": {
-      "total_entries": 5,
-      "avg_rating": 3.4,
-      "avg_quality_score": 0.5922,
-      "rating_std": 0.5477225575051661,
-      "quality_std": 0.046510213931995614
+      "total_entries": 7,
+      "avg_rating": 3,
+      "avg_quality_score": 0.423,
+      "rating_std": 0.816496580927726,
+      "quality_std": 0.2914486804453459
     },
     "by_prompt_hash": {
       "998fa1af57e8a3cd": {
@@ -102,12 +144,38 @@
         "avg_quality_score": 0.509,
         "rating_std": 0,
         "quality_std": 0
+      },
+      "4856557e12402094": {
+        "count": 1,
+        "ratings": [
+          2
+        ],
+        "quality_scores": [
+          0.0
+        ],
+        "avg_rating": 2,
+        "avg_quality_score": 0.0,
+        "rating_std": 0,
+        "quality_std": 0
+      },
+      "9f5efba5786efd23": {
+        "count": 1,
+        "ratings": [
+          2
+        ],
+        "quality_scores": [
+          0.0
+        ],
+        "avg_rating": 2,
+        "avg_quality_score": 0.0,
+        "rating_std": 0,
+        "quality_std": 0
       }
     },
-    "last_updated": "2025-08-03T02:56:58.627999"
+    "last_updated": "2025-08-03T15:03:16.246249"
   },
   "metadata": {
     "created": "2025-08-03T02:48:15.431168",
-    "total_entries": 5
+    "total_entries": 7
   }
 }

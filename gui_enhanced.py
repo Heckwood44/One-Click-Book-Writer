@@ -28,16 +28,29 @@ class EnhancedBookWriterGUI:
         self.root.title("One Click Book Writer - Enhanced GUI v2.0")
         self.root.geometry("1600x1000")
         
-        # Router initialisieren
-        self.router = PromptRouter()
-        
         # API Keys prüfen
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
         self.anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
         
+        # Router initialisieren (mit Fehlerbehandlung)
+        try:
+            self.router = PromptRouter()
+        except ValueError as e:
+            if "OPENAI_API_KEY ist erforderlich" in str(e):
+                messagebox.showwarning("API Key fehlt", 
+                    "OPENAI_API_KEY nicht gefunden.\n"
+                    "Die Anwendung startet ohne KI-Features.\n"
+                    "Sie können API-Keys später konfigurieren.")
+                self.router = None
+            else:
+                raise
+        
         # Status-Variablen
         self.status_var = tk.StringVar()
-        self.status_var.set("Bereit - Lade Template...")
+        if self.router:
+            self.status_var.set("Bereit - Lade Template...")
+        else:
+            self.status_var.set("Bereit - API-Keys konfigurieren...")
         
         # UI aufbauen
         self.setup_ui()
@@ -232,6 +245,12 @@ class EnhancedBookWriterGUI:
     
     def generate_chapter(self):
         """Generiert ein Kapitel in einem separaten Thread"""
+        if not self.router:
+            messagebox.showerror("API-Fehler", 
+                "OpenAI API Key nicht gefunden!\n"
+                "Bitte konfigurieren Sie zuerst die API-Keys.")
+            return
+        
         if not self.openai_api_key:
             messagebox.showerror("API-Fehler", "OpenAI API Key nicht gefunden!")
             return
@@ -342,7 +361,13 @@ class EnhancedBookWriterGUI:
         self.status_display.see(tk.END)
     
     def batch_generation(self):
-        """Batch-Generierung für mehrere Kapitel"""
+        """Startet Batch-Generierung in einem separaten Thread"""
+        if not self.router:
+            messagebox.showerror("API-Fehler", 
+                "OpenAI API Key nicht gefunden!\n"
+                "Bitte konfigurieren Sie zuerst die API-Keys.")
+            return
+        
         if not self.openai_api_key:
             messagebox.showerror("API-Fehler", "OpenAI API Key nicht gefunden!")
             return

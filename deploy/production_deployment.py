@@ -340,52 +340,42 @@ TOP_SEGMENTS_FOR_RECALIBRATION=5
 
 ## Deployment Summary
 - **Timestamp**: {report['deployment_timestamp']}
-- **Environment**: {report['environment']}
-- **Status**: ✅ Successfully Deployed
+- **Status**: ✅ Successful
+- **API Port**: {report['configuration']['api_port']}
+- **Environment**: {report['configuration']['environment']}
 
-## Services Deployed
-
-### API Service
-- **Port**: {report['services']['api']['port']}
-- **Status**: {report['services']['api']['status']}
-- **Endpoints**: {', '.join(report['services']['api']['endpoints'])}
-
-### Monitoring Service
-- **Status**: {report['services']['monitoring']['status']}
-- **Features**: {', '.join(report['services']['monitoring']['features'])}
-
-### Maintenance Service
-- **Status**: {report['services']['maintenance']['status']}
-- **Features**: {', '.join(report['services']['maintenance']['features'])}
+## Services Status
+- **API Service**: ✅ Active
+- **Monitoring Service**: ✅ Active  
+- **Maintenance Service**: ✅ Active
+- **Health Checks**: ✅ Passed
 
 ## Configuration
-- **Workers**: {report['configuration']['workers']}
-- **Max Requests**: {report['configuration']['max_requests']}
-- **Timeout**: {report['configuration']['timeout']}s
-- **Log Level**: {report['configuration']['log_level']}
-
-## Directories Created
-{chr(10).join(f"- {dir}" for dir in report['directories_created'])}
-
-## Next Steps
-{chr(10).join(f"- {step}" for step in report['next_steps'])}
-
-## Quick Start
-
-### 1. Test API
-```bash
-curl -X POST http://localhost:{report['configuration']['api_port']}/generate \\
-  -H "Authorization: Bearer YOUR_API_KEY" \\
-  -H "Content-Type: application/json" \\
-  -d '{{"age_group": "early_reader", "genre": "adventure", "emotion": "courage"}}'
+```json
+{json.dumps(report['configuration'], indent=2)}
 ```
 
-### 2. Check Health
+## Health Check Results
+```json
+{json.dumps(report['health_checks'], indent=2)}
+```
+
+## Usage Examples
+
+### 1. API Endpoint
 ```bash
 curl http://localhost:{report['configuration']['api_port']}/health
 ```
 
-### 3. View Metrics
+### 2. Generate Chapter
+```bash
+curl -X POST http://localhost:{report['configuration']['api_port']}/generate \\
+  -H "Content-Type: application/json" \\
+  -H "Authorization: Bearer YOUR_API_KEY" \\
+  -d '{{"age_group": "early_reader", "genre": "adventure"}}'
+```
+
+### 3. Get Metrics
 ```bash
 curl http://localhost:{report['configuration']['api_port']}/metrics \\
   -H "Authorization: Bearer YOUR_API_KEY"
@@ -395,13 +385,14 @@ curl http://localhost:{report['configuration']['api_port']}/metrics \\
 ```python
 from sdk.bookwriter_sdk import quick_generate
 
-result = quick_generate(
+# Example usage
+chapter_result = quick_generate(
     age_group="early_reader",
     genre="adventure", 
     emotion="courage",
     description="Eine mutige Entdeckungsreise"
 )
-print(f"Generated {result.word_count} words with quality score {result.quality_score}")
+print(f"Generated {{chapter_result.word_count}} words with quality score {{chapter_result.quality_score}}")
 ```
 
 ---

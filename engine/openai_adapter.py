@@ -26,7 +26,9 @@ class OpenAIAdapter:
         """
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
-            raise ValueError("OPENAI_API_KEY ist erforderlich")
+            logger.warning("OPENAI_API_KEY nicht gefunden - OpenAI-Features sind deaktiviert")
+            self.client = None
+            return
             
         # Erstelle Client ohne Proxy-Parameter (kompatibel mit neueren Versionen)
         try:

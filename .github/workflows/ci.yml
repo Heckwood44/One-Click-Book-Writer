@@ -4,7 +4,11 @@ on:
   push:
     branches: [ main, develop ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main ]
+
+env:
+  PYTHON_VERSION: 3.12
+  COVERAGE_THRESHOLD: 80
 
 jobs:
   test:
@@ -13,6 +17,10 @@ jobs:
     strategy:
       matrix:
         python-version: [3.11, 3.12]
+    
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     
     steps:
     - uses: actions/checkout@v4
